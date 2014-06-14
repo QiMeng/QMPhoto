@@ -14,10 +14,20 @@
 
 @implementation ViewController
 
+#pragma mark - 隐藏状态栏
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    preView.layer.cornerRadius = 5;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

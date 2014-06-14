@@ -1,1117 +1,540 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>8B107697AF0D4FE69053C454</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8B9D26CF02734AAC976FE9D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>952E2142B4144A8AB9B03C8D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C2C297C8F75448CCA30226F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8B107697AF0D4FE69053C454</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D0730CE8BA7840309D8FB2DC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F55E194BFC8F00C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F570194BFC9000C3CC92</string>
-				<string>F0E2F592194BFC9000C3CC92</string>
-				<string>F0E2F569194BFC8F00C3CC92</string>
-				<string>F0E2F568194BFC8F00C3CC92</string>
-				<string>8B9D26CF02734AAC976FE9D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F55F194BFC8F00C3CC92</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>QiMengJin_LYS</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>F0E2F58A194BFC9000C3CC92</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>F0E2F566194BFC8F00C3CC92</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>F0E2F562194BFC8F00C3CC92</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>F0E2F55E194BFC8F00C3CC92</string>
-			<key>productRefGroup</key>
-			<string>F0E2F568194BFC8F00C3CC92</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>F0E2F566194BFC8F00C3CC92</string>
-				<string>F0E2F58A194BFC9000C3CC92</string>
-			</array>
-		</dict>
-		<key>F0E2F562194BFC8F00C3CC92</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F0E2F59A194BFC9000C3CC92</string>
-				<string>F0E2F59B194BFC9000C3CC92</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F0E2F563194BFC8F00C3CC92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0E2F584194BFC9000C3CC92</string>
-				<string>F0E2F57B194BFC9000C3CC92</string>
-				<string>F0E2F577194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F564194BFC8F00C3CC92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0E2F56D194BFC9000C3CC92</string>
-				<string>F0E2F56F194BFC9000C3CC92</string>
-				<string>F0E2F56B194BFC8F00C3CC92</string>
-				<string>C2C297C8F75448CCA30226F9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F565194BFC8F00C3CC92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0E2F581194BFC9000C3CC92</string>
-				<string>F0E2F586194BFC9000C3CC92</string>
-				<string>F0E2F57E194BFC9000C3CC92</string>
-				<string>F0E2F575194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F566194BFC8F00C3CC92</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F0E2F59C194BFC9000C3CC92</string>
-			<key>buildPhases</key>
-			<array>
-				<string>952E2142B4144A8AB9B03C8D</string>
-				<string>F0E2F563194BFC8F00C3CC92</string>
-				<string>F0E2F564194BFC8F00C3CC92</string>
-				<string>F0E2F565194BFC8F00C3CC92</string>
-				<string>D0730CE8BA7840309D8FB2DC</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>QMPhoto</string>
-			<key>productName</key>
-			<string>QMPhoto</string>
-			<key>productReference</key>
-			<string>F0E2F567194BFC8F00C3CC92</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>F0E2F567194BFC8F00C3CC92</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>QMPhoto.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F0E2F568194BFC8F00C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F567194BFC8F00C3CC92</string>
-				<string>F0E2F58B194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F569194BFC8F00C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F56A194BFC8F00C3CC92</string>
-				<string>F0E2F56C194BFC9000C3CC92</string>
-				<string>F0E2F56E194BFC9000C3CC92</string>
-				<string>F0E2F58C194BFC9000C3CC92</string>
-				<string>8B107697AF0D4FE69053C454</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F56A194BFC8F00C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F0E2F56B194BFC8F00C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F56A194BFC8F00C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F56C194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F0E2F56D194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F56C194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F56E194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F0E2F56F194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F56E194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F570194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F579194BFC9000C3CC92</string>
-				<string>F0E2F57A194BFC9000C3CC92</string>
-				<string>F0E2F57C194BFC9000C3CC92</string>
-				<string>F0E2F57F194BFC9000C3CC92</string>
-				<string>F0E2F582194BFC9000C3CC92</string>
-				<string>F0E2F583194BFC9000C3CC92</string>
-				<string>F0E2F585194BFC9000C3CC92</string>
-				<string>F0E2F571194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>QMPhoto</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F571194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F572194BFC9000C3CC92</string>
-				<string>F0E2F573194BFC9000C3CC92</string>
-				<string>F0E2F576194BFC9000C3CC92</string>
-				<string>F0E2F578194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F572194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>QMPhoto-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F573194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F574194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F574194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F575194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F573194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F576194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F577194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F576194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F578194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>QMPhoto-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F579194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F57A194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F57B194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F57A194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F57C194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F57D194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F57D194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F57E194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F57C194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F57F194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F580194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F580194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F581194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F57F194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F582194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F583194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F584194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F583194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F585194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F586194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F585194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F587194BFC9000C3CC92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0E2F599194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F588194BFC9000C3CC92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0E2F58D194BFC9000C3CC92</string>
-				<string>F0E2F58F194BFC9000C3CC92</string>
-				<string>F0E2F58E194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F589194BFC9000C3CC92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0E2F597194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0E2F58A194BFC9000C3CC92</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F0E2F59F194BFC9000C3CC92</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F0E2F587194BFC9000C3CC92</string>
-				<string>F0E2F588194BFC9000C3CC92</string>
-				<string>F0E2F589194BFC9000C3CC92</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>F0E2F591194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>QMPhotoTests</string>
-			<key>productName</key>
-			<string>QMPhotoTests</string>
-			<key>productReference</key>
-			<string>F0E2F58B194BFC9000C3CC92</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>F0E2F58B194BFC9000C3CC92</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>QMPhotoTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F0E2F58C194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>F0E2F58D194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F58C194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F58E194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F56A194BFC8F00C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F58F194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F56E194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F590194BFC9000C3CC92</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>F0E2F55F194BFC8F00C3CC92</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>F0E2F566194BFC8F00C3CC92</string>
-			<key>remoteInfo</key>
-			<string>QMPhoto</string>
-		</dict>
-		<key>F0E2F591194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>F0E2F566194BFC8F00C3CC92</string>
-			<key>targetProxy</key>
-			<string>F0E2F590194BFC9000C3CC92</string>
-		</dict>
-		<key>F0E2F592194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F598194BFC9000C3CC92</string>
-				<string>F0E2F593194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>QMPhotoTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F593194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F594194BFC9000C3CC92</string>
-				<string>F0E2F595194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F594194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>QMPhotoTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F595194BFC9000C3CC92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F0E2F596194BFC9000C3CC92</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F596194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F597194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F595194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F598194BFC9000C3CC92</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>QMPhotoTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E2F599194BFC9000C3CC92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E2F598194BFC9000C3CC92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0E2F59A194BFC9000C3CC92</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F0E2F59B194BFC9000C3CC92</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F0E2F59C194BFC9000C3CC92</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F0E2F59D194BFC9000C3CC92</string>
-				<string>F0E2F59E194BFC9000C3CC92</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F0E2F59D194BFC9000C3CC92</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8B9D26CF02734AAC976FE9D8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>QMPhoto/QMPhoto-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>QMPhoto/QMPhoto-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F0E2F59E194BFC9000C3CC92</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8B9D26CF02734AAC976FE9D8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>QMPhoto/QMPhoto-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>QMPhoto/QMPhoto-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F0E2F59F194BFC9000C3CC92</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F0E2F5A0194BFC9000C3CC92</string>
-				<string>F0E2F5A1194BFC9000C3CC92</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F0E2F5A0194BFC9000C3CC92</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/QMPhoto.app/QMPhoto</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>QMPhoto/QMPhoto-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>QMPhotoTests/QMPhotoTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F0E2F5A1194BFC9000C3CC92</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/QMPhoto.app/QMPhoto</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>QMPhoto/QMPhoto-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>QMPhotoTests/QMPhotoTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>F0E2F55F194BFC8F00C3CC92</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B107697AF0D4FE69053C454 /* libPods.a */; };
+		F0E2F56B194BFC8F00C3CC92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2F56A194BFC8F00C3CC92 /* Foundation.framework */; };
+		F0E2F56D194BFC9000C3CC92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2F56C194BFC9000C3CC92 /* CoreGraphics.framework */; };
+		F0E2F56F194BFC9000C3CC92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2F56E194BFC9000C3CC92 /* UIKit.framework */; };
+		F0E2F575194BFC9000C3CC92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0E2F573194BFC9000C3CC92 /* InfoPlist.strings */; };
+		F0E2F577194BFC9000C3CC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E2F576194BFC9000C3CC92 /* main.m */; };
+		F0E2F57B194BFC9000C3CC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E2F57A194BFC9000C3CC92 /* AppDelegate.m */; };
+		F0E2F57E194BFC9000C3CC92 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E2F57C194BFC9000C3CC92 /* Main_iPhone.storyboard */; };
+		F0E2F581194BFC9000C3CC92 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E2F57F194BFC9000C3CC92 /* Main_iPad.storyboard */; };
+		F0E2F584194BFC9000C3CC92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E2F583194BFC9000C3CC92 /* ViewController.m */; };
+		F0E2F586194BFC9000C3CC92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E2F585194BFC9000C3CC92 /* Images.xcassets */; };
+		F0E2F58D194BFC9000C3CC92 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2F58C194BFC9000C3CC92 /* XCTest.framework */; };
+		F0E2F58E194BFC9000C3CC92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2F56A194BFC8F00C3CC92 /* Foundation.framework */; };
+		F0E2F58F194BFC9000C3CC92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2F56E194BFC9000C3CC92 /* UIKit.framework */; };
+		F0E2F597194BFC9000C3CC92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0E2F595194BFC9000C3CC92 /* InfoPlist.strings */; };
+		F0E2F599194BFC9000C3CC92 /* QMPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E2F598194BFC9000C3CC92 /* QMPhotoTests.m */; };
+		F0E2F5A4194C14E800C3CC92 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E2F5A3194C14E800C3CC92 /* UIView+Size.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0E2F590194BFC9000C3CC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0E2F55F194BFC8F00C3CC92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E2F566194BFC8F00C3CC92;
+			remoteInfo = QMPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B107697AF0D4FE69053C454 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F0E2F567194BFC8F00C3CC92 /* QMPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QMPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E2F56A194BFC8F00C3CC92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0E2F56C194BFC9000C3CC92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F0E2F56E194BFC9000C3CC92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F0E2F572194BFC9000C3CC92 /* QMPhoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMPhoto-Info.plist"; sourceTree = "<group>"; };
+		F0E2F574194BFC9000C3CC92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0E2F576194BFC9000C3CC92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0E2F578194BFC9000C3CC92 /* QMPhoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMPhoto-Prefix.pch"; sourceTree = "<group>"; };
+		F0E2F579194BFC9000C3CC92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0E2F57A194BFC9000C3CC92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0E2F57D194BFC9000C3CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F0E2F580194BFC9000C3CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F0E2F582194BFC9000C3CC92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F0E2F583194BFC9000C3CC92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F0E2F585194BFC9000C3CC92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0E2F58B194BFC9000C3CC92 /* QMPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QMPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E2F58C194BFC9000C3CC92 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F0E2F594194BFC9000C3CC92 /* QMPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMPhotoTests-Info.plist"; sourceTree = "<group>"; };
+		F0E2F596194BFC9000C3CC92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0E2F598194BFC9000C3CC92 /* QMPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMPhotoTests.m; sourceTree = "<group>"; };
+		F0E2F5A2194C14E800C3CC92 /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		F0E2F5A3194C14E800C3CC92 /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0E2F564194BFC8F00C3CC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2F56D194BFC9000C3CC92 /* CoreGraphics.framework in Frameworks */,
+				F0E2F56F194BFC9000C3CC92 /* UIKit.framework in Frameworks */,
+				F0E2F56B194BFC8F00C3CC92 /* Foundation.framework in Frameworks */,
+				C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E2F588194BFC9000C3CC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2F58D194BFC9000C3CC92 /* XCTest.framework in Frameworks */,
+				F0E2F58F194BFC9000C3CC92 /* UIKit.framework in Frameworks */,
+				F0E2F58E194BFC9000C3CC92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0E2F55E194BFC8F00C3CC92 = {
+			isa = PBXGroup;
+			children = (
+				F0E2F570194BFC9000C3CC92 /* QMPhoto */,
+				F0E2F592194BFC9000C3CC92 /* QMPhotoTests */,
+				F0E2F569194BFC8F00C3CC92 /* Frameworks */,
+				F0E2F568194BFC8F00C3CC92 /* Products */,
+				8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F0E2F568194BFC8F00C3CC92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0E2F567194BFC8F00C3CC92 /* QMPhoto.app */,
+				F0E2F58B194BFC9000C3CC92 /* QMPhotoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0E2F569194BFC8F00C3CC92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0E2F56A194BFC8F00C3CC92 /* Foundation.framework */,
+				F0E2F56C194BFC9000C3CC92 /* CoreGraphics.framework */,
+				F0E2F56E194BFC9000C3CC92 /* UIKit.framework */,
+				F0E2F58C194BFC9000C3CC92 /* XCTest.framework */,
+				8B107697AF0D4FE69053C454 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0E2F570194BFC9000C3CC92 /* QMPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				F0E2F579194BFC9000C3CC92 /* AppDelegate.h */,
+				F0E2F57A194BFC9000C3CC92 /* AppDelegate.m */,
+				F0E2F57C194BFC9000C3CC92 /* Main_iPhone.storyboard */,
+				F0E2F57F194BFC9000C3CC92 /* Main_iPad.storyboard */,
+				F0E2F582194BFC9000C3CC92 /* ViewController.h */,
+				F0E2F583194BFC9000C3CC92 /* ViewController.m */,
+				F0E2F5A2194C14E800C3CC92 /* UIView+Size.h */,
+				F0E2F5A3194C14E800C3CC92 /* UIView+Size.m */,
+				F0E2F585194BFC9000C3CC92 /* Images.xcassets */,
+				F0E2F571194BFC9000C3CC92 /* Supporting Files */,
+			);
+			path = QMPhoto;
+			sourceTree = "<group>";
+		};
+		F0E2F571194BFC9000C3CC92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0E2F572194BFC9000C3CC92 /* QMPhoto-Info.plist */,
+				F0E2F573194BFC9000C3CC92 /* InfoPlist.strings */,
+				F0E2F576194BFC9000C3CC92 /* main.m */,
+				F0E2F578194BFC9000C3CC92 /* QMPhoto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0E2F592194BFC9000C3CC92 /* QMPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0E2F598194BFC9000C3CC92 /* QMPhotoTests.m */,
+				F0E2F593194BFC9000C3CC92 /* Supporting Files */,
+			);
+			path = QMPhotoTests;
+			sourceTree = "<group>";
+		};
+		F0E2F593194BFC9000C3CC92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0E2F594194BFC9000C3CC92 /* QMPhotoTests-Info.plist */,
+				F0E2F595194BFC9000C3CC92 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0E2F566194BFC8F00C3CC92 /* QMPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E2F59C194BFC9000C3CC92 /* Build configuration list for PBXNativeTarget "QMPhoto" */;
+			buildPhases = (
+				952E2142B4144A8AB9B03C8D /* Check Pods Manifest.lock */,
+				F0E2F563194BFC8F00C3CC92 /* Sources */,
+				F0E2F564194BFC8F00C3CC92 /* Frameworks */,
+				F0E2F565194BFC8F00C3CC92 /* Resources */,
+				D0730CE8BA7840309D8FB2DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QMPhoto;
+			productName = QMPhoto;
+			productReference = F0E2F567194BFC8F00C3CC92 /* QMPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0E2F58A194BFC9000C3CC92 /* QMPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E2F59F194BFC9000C3CC92 /* Build configuration list for PBXNativeTarget "QMPhotoTests" */;
+			buildPhases = (
+				F0E2F587194BFC9000C3CC92 /* Sources */,
+				F0E2F588194BFC9000C3CC92 /* Frameworks */,
+				F0E2F589194BFC9000C3CC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0E2F591194BFC9000C3CC92 /* PBXTargetDependency */,
+			);
+			name = QMPhotoTests;
+			productName = QMPhotoTests;
+			productReference = F0E2F58B194BFC9000C3CC92 /* QMPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0E2F55F194BFC8F00C3CC92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = QiMengJin_LYS;
+				TargetAttributes = {
+					F0E2F58A194BFC9000C3CC92 = {
+						TestTargetID = F0E2F566194BFC8F00C3CC92;
+					};
+				};
+			};
+			buildConfigurationList = F0E2F562194BFC8F00C3CC92 /* Build configuration list for PBXProject "QMPhoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0E2F55E194BFC8F00C3CC92;
+			productRefGroup = F0E2F568194BFC8F00C3CC92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0E2F566194BFC8F00C3CC92 /* QMPhoto */,
+				F0E2F58A194BFC9000C3CC92 /* QMPhotoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0E2F565194BFC8F00C3CC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2F581194BFC9000C3CC92 /* Main_iPad.storyboard in Resources */,
+				F0E2F586194BFC9000C3CC92 /* Images.xcassets in Resources */,
+				F0E2F57E194BFC9000C3CC92 /* Main_iPhone.storyboard in Resources */,
+				F0E2F575194BFC9000C3CC92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E2F589194BFC9000C3CC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2F597194BFC9000C3CC92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		952E2142B4144A8AB9B03C8D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0730CE8BA7840309D8FB2DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0E2F563194BFC8F00C3CC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2F584194BFC9000C3CC92 /* ViewController.m in Sources */,
+				F0E2F57B194BFC9000C3CC92 /* AppDelegate.m in Sources */,
+				F0E2F577194BFC9000C3CC92 /* main.m in Sources */,
+				F0E2F5A4194C14E800C3CC92 /* UIView+Size.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E2F587194BFC9000C3CC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2F599194BFC9000C3CC92 /* QMPhotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0E2F591194BFC9000C3CC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0E2F566194BFC8F00C3CC92 /* QMPhoto */;
+			targetProxy = F0E2F590194BFC9000C3CC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0E2F573194BFC9000C3CC92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0E2F574194BFC9000C3CC92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F0E2F57C194BFC9000C3CC92 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0E2F57D194BFC9000C3CC92 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F0E2F57F194BFC9000C3CC92 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0E2F580194BFC9000C3CC92 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F0E2F595194BFC9000C3CC92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0E2F596194BFC9000C3CC92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0E2F59A194BFC9000C3CC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0E2F59B194BFC9000C3CC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0E2F59D194BFC9000C3CC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
+				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F0E2F59E194BFC9000C3CC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
+				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F0E2F5A0194BFC9000C3CC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMPhoto.app/QMPhoto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QMPhotoTests/QMPhotoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F0E2F5A1194BFC9000C3CC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMPhoto.app/QMPhoto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
+				INFOPLIST_FILE = "QMPhotoTests/QMPhotoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0E2F562194BFC8F00C3CC92 /* Build configuration list for PBXProject "QMPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E2F59A194BFC9000C3CC92 /* Debug */,
+				F0E2F59B194BFC9000C3CC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0E2F59C194BFC9000C3CC92 /* Build configuration list for PBXNativeTarget "QMPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E2F59D194BFC9000C3CC92 /* Debug */,
+				F0E2F59E194BFC9000C3CC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0E2F59F194BFC9000C3CC92 /* Build configuration list for PBXNativeTarget "QMPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E2F5A0194BFC9000C3CC92 /* Debug */,
+				F0E2F5A1194BFC9000C3CC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0E2F55F194BFC8F00C3CC92 /* Project object */;
+}

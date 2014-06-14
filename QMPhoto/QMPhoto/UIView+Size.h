@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIView+Size.h
 //  QMPhoto
 //
 //  Created by QiMengJin on 14-6-14.
@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    
-    
-    __weak IBOutlet UIView *preView;
-    
-    
-}
+@interface UIView (Size)
+
+- (CGFloat)top;
+- (CGFloat)bottom;
+- (CGFloat)left;
+- (CGFloat)right;
+- (CGFloat)width;
+- (CGFloat)height;
+
 
 @end
