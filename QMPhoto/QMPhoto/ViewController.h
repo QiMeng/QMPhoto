@@ -8,12 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
+#import <iCarousel.h>
+#import "GADInterstitial.h"
+#import "GADInterstitialDelegate.h"
+@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate,GADInterstitialDelegate>{
     
     
     __weak IBOutlet UIView *preView;
     
+    iCarousel *myCarousel;
     
+    
+    __weak IBOutlet UIView *gameView;
+    
+    
+    GADInterstitial *interstitial_;
 }
 
+
+@property(nonatomic, retain) GADInterstitial *interstitial;
 @end
