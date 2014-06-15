@@ -10,6 +10,9 @@
 
 @interface ListViewController ()
 
+@property (nonatomic, strong) NSArray * listArray;
+
+
 @end
 
 @implementation ListViewController
@@ -37,15 +40,64 @@
     
     self.title = @"设置";
     
-    listTableView = [[UITableView alloc]initWithFrame:self.view.frame];
+    _listArray = @[@[@"继续",@"重新开始"],
+  @[@"音效",@"音乐"],
+                   @[@"排行榜"],
+                   
+  @[@"2",@"4",@"8",@"16",@"32",@"64",@"128",@"256",@"512",@"1024",@"2048"]];
     
+    
+    
+    listTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    listTableView.delegate = self;
+    listTableView.dataSource = self;
     [self.view addSubview:listTableView];
+    
+    
+    
+    
     
     
 }
 
 
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return _listArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+
+    NSArray * array = [_listArray objectAtIndex:section];
+    return array.count;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 44;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *reuseIdetify = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+
+    }
+    
+    NSArray * array = [_listArray objectAtIndex:indexPath.section];
+    
+    cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    
+    
+    return cell;
+    
+}
 
 
 
