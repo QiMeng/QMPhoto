@@ -16,5 +16,9 @@
 
 #import "UIView+Size.h"
 
+#import "M2Texture.h"
+
+#import "VerticalButton.h"
+
 
 #endif

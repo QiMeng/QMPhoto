@@ -9,14 +9,23 @@
 #import <UIKit/UIKit.h>
 
 #import <iCarousel.h>
+#import <MZFormSheetController.h>
+
 #import "GADInterstitial.h"
 #import "GADInterstitialDelegate.h"
 @interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate,GADInterstitialDelegate>{
     
-    
     __weak IBOutlet UIView *preView;
-    
     iCarousel *myCarousel;
+    
+    
+    __weak IBOutlet UIView *toolView;
+    __weak IBOutlet UILabel *currentLabel;
+    
+    __weak IBOutlet UILabel *highestLabel;
+    
+    
+
     
     
     __weak IBOutlet UIView *gameView;

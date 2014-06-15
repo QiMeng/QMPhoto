@@ -10,6 +10,10 @@
 
 #import "AppDelegate.h"
 
+#import "SetViewController.h"
+
+#import "ListViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -22,6 +26,12 @@
     return YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,8 +42,41 @@
     
     
     
-    [self addiCarousel];
     
+    
+    UIActivityIndicatorView* activityIndicatorView = [ [ UIActivityIndicatorView alloc ]
+                                                      init];
+    activityIndicatorView.center = self.view.center;
+    activityIndicatorView.activityIndicatorViewStyle= UIActivityIndicatorViewStyleGray;
+    activityIndicatorView.hidesWhenStopped = YES;
+    [ self.view addSubview:activityIndicatorView ];
+    [ activityIndicatorView startAnimating ];
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+
+        [TextureState initImageDicFromArray:@[@"2",@"4",@"8",@"16",@"32",@"64",@"128",@"256",@"512",@"1024",@"2048",@"4096",@"8192",@"16384"]];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [self myiCarousel];
+            [UIView animateWithDuration:.3 animations:^{
+
+                preView.alpha = 1;
+                toolView.alpha = 1;
+                gameView.alpha = 1;
+                myCarousel.alpha = 1;
+            }];
+
+            [activityIndicatorView stopAnimating];
+            
+        });
+    });
+    
+    
+    
+
     
 }
 - (void)viewDidLayoutSubviews {
@@ -42,9 +85,42 @@
     [self showInterstitial:nil];
 }
 
+- (IBAction)goToSetView:(id)sender {
+    
+    
+    ListViewController * ctrl = [[ListViewController alloc]init];
+    
+    [self.navigationController pushViewController: ctrl animated:YES];
+    
+//    SetViewController * ctrl = [[SetViewController alloc]init];
+//    
+////    ctrl.delegate = self;
+//    
+//    
+//    MZFormSheetController *formSheet = [[MZFormSheetController alloc] initWithViewController:ctrl];
+//    
+//    formSheet.transitionStyle = MZFormSheetTransitionStyleFade;
+//    
+//    formSheet.cornerRadius = 0;
+//    
+//    formSheet.shouldDismissOnBackgroundViewTap = YES;
+//    
+//    formSheet.shouldCenterVertically = YES;
+//    
+//    formSheet.presentedFormSheetSize = self.view.bounds.size;
+//    
+//    
+//    [self mz_presentFormSheetController:formSheet animated:YES completionHandler:^(MZFormSheetController *formSheetController) {
+//        
+//    }];
+}
+
+
+
+
 
 #pragma mark - 添加展示视图
-- (void)addiCarousel {
+- (void)myiCarousel {
     
     if (!myCarousel) {
         //添加展示图片
@@ -54,11 +130,10 @@
         myCarousel.delegate = self;
         myCarousel.dataSource = self;
         myCarousel.type = iCarouselTypeCoverFlow2;
-        myCarousel.alpha = 1;
+        myCarousel.alpha = 0;
         [preView addSubview:myCarousel];
         
     }
-    
     [myCarousel reloadData];
 }
 
@@ -68,7 +143,7 @@
 }
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
-    return 14;
+    return TextureState.imageArray.count;
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
@@ -81,29 +156,18 @@
         view.contentMode = UIViewContentModeScaleAspectFill;
         view.backgroundColor = [UIColor whiteColor];
         view.layer.cornerRadius = 5;
-
-        
         view.clipsToBounds = YES;
         
     }
-    NSString * tileStr = [NSString stringWithFormat:@"%d",[self valueForLevel:index+1]];
+
     
-    ((UIImageView*)view).image = [UIImage imageNamed:tileStr];
+    ((UIImageView*)view).image = [TextureState imageForLevel:index];
     
     return view;
     
 }
 
-//指定级别的数值
-- (NSInteger)valueForLevel:(NSInteger)level
-{
-    NSInteger value = 1;
-    NSInteger base =  2 ;
-    for (NSInteger i = 0; i < level; i++) {
-        value *= base;
-    }
-    return value;
-}
+#pragma mark - 广告
 
 - (void)showInterstitial:(id)sender {
     // Create a new GADInterstitial each time.  A GADInterstitial
@@ -137,12 +201,12 @@
 /// Called just after dismissing an interstitial and it has animated off the screen.
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
     
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:60];
+    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];
 }
 - (void)interstitialWillLeaveApplication:(GADInterstitial *)ad {
 //    self.interstitial.delegate = nil;
 //    
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:120];
+    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];
 }
 
 - (void)didReceiveMemoryWarning
