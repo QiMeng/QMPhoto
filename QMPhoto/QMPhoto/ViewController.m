@@ -10,7 +10,6 @@
 
 #import "AppDelegate.h"
 
-#import "SetViewController.h"
 
 #import "ListViewController.h"
 
@@ -85,6 +84,7 @@
     [self showInterstitial:nil];
 }
 
+#pragma mark - 进入设置界面
 - (IBAction)goToSetView:(id)sender {
     
     
@@ -92,27 +92,6 @@
     
     [self.navigationController pushViewController: ctrl animated:YES];
     
-//    SetViewController * ctrl = [[SetViewController alloc]init];
-//    
-////    ctrl.delegate = self;
-//    
-//    
-//    MZFormSheetController *formSheet = [[MZFormSheetController alloc] initWithViewController:ctrl];
-//    
-//    formSheet.transitionStyle = MZFormSheetTransitionStyleFade;
-//    
-//    formSheet.cornerRadius = 0;
-//    
-//    formSheet.shouldDismissOnBackgroundViewTap = YES;
-//    
-//    formSheet.shouldCenterVertically = YES;
-//    
-//    formSheet.presentedFormSheetSize = self.view.bounds.size;
-//    
-//    
-//    [self mz_presentFormSheetController:formSheet animated:YES completionHandler:^(MZFormSheetController *formSheetController) {
-//        
-//    }];
 }
 
 

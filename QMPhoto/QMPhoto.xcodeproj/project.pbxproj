@@ -13,7 +13,6 @@
 		F0ABF324194D1A5400D7CF21 /* M2Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ABF321194D1A5400D7CF21 /* M2Texture.m */; };
 		F0ABF325194D1A5400D7CF21 /* QMLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ABF323194D1A5400D7CF21 /* QMLocal.m */; };
 		F0ABF329194D20C700D7CF21 /* VerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ABF328194D20C700D7CF21 /* VerticalButton.m */; };
-		F0ABF32F194D212100D7CF21 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ABF32E194D212100D7CF21 /* SetViewController.m */; };
 		F0ABF33A194D22F400D7CF21 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF330194D22F400D7CF21 /* mute.png */; };
 		F0ABF33B194D22F400D7CF21 /* mute@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF331194D22F400D7CF21 /* mute@2x.png */; };
 		F0ABF33C194D22F400D7CF21 /* pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF332194D22F400D7CF21 /* pictures.png */; };
@@ -94,8 +93,6 @@
 		F0ABF323194D1A5400D7CF21 /* QMLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLocal.m; sourceTree = "<group>"; };
 		F0ABF327194D20C700D7CF21 /* VerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalButton.h; sourceTree = "<group>"; };
 		F0ABF328194D20C700D7CF21 /* VerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalButton.m; sourceTree = "<group>"; };
-		F0ABF32D194D212100D7CF21 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
-		F0ABF32E194D212100D7CF21 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		F0ABF330194D22F400D7CF21 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute.png; sourceTree = "<group>"; };
 		F0ABF331194D22F400D7CF21 /* mute@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mute@2x.png"; sourceTree = "<group>"; };
 		F0ABF332194D22F400D7CF21 /* pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictures.png; sourceTree = "<group>"; };
@@ -337,8 +334,6 @@
 				F0E2F57F194BFC9000C3CC92 /* Main_iPad.storyboard */,
 				F0E2F582194BFC9000C3CC92 /* ViewController.h */,
 				F0E2F583194BFC9000C3CC92 /* ViewController.m */,
-				F0ABF32D194D212100D7CF21 /* SetViewController.h */,
-				F0ABF32E194D212100D7CF21 /* SetViewController.m */,
 				F0ABF344194D255B00D7CF21 /* ListViewController.h */,
 				F0ABF345194D255B00D7CF21 /* ListViewController.m */,
 				F0ABF326194D20B600D7CF21 /* base */,
@@ -557,7 +552,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0E2F584194BFC9000C3CC92 /* ViewController.m in Sources */,
-				F0ABF32F194D212100D7CF21 /* SetViewController.m in Sources */,
 				F0ABF346194D255B00D7CF21 /* ListViewController.m in Sources */,
 				F0ABF324194D1A5400D7CF21 /* M2Texture.m in Sources */,
 				F0E2F57B194BFC9000C3CC92 /* AppDelegate.m in Sources */,

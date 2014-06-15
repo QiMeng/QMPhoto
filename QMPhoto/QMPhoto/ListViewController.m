@@ -100,6 +100,48 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    if (indexPath.section == 0) {
+        //继续
+        if (indexPath.row == 0) {
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        }
+        
+        if (indexPath.row == 1) {
+#warning 重新开始
+            
+            
+            
+        }
+        
+    }
+    
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+#warning 音效
+        }
+        if (indexPath.row == 1) {
+#warning 音乐
+        }
+    }
+    
+    if (indexPath.section == 2 && indexPath.row == 0) {
+#warning 排行榜
+    }
+    
+    if (indexPath.section == 3) {
+#warning 图片
+    }
+    
+
+
+    
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
