@@ -7,7 +7,7 @@
 //
 
 #import "ListViewController.h"
-
+#import "ViewController.h"
 @interface ListViewController ()
 
 @property (nonatomic, strong) NSArray * listArray;
@@ -86,9 +86,41 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
 
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
-
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdetify];
     }
+    
+    switch (indexPath.section) {
+        case 0:
+        {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.detailTextLabel.text = @"";
+        }
+            break;
+        case 1:
+        {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.detailTextLabel.text = @"开";
+           
+        }
+            break;
+        case 2:
+        {
+            cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+            cell.detailTextLabel.text = @"";
+        }
+            break;
+        case 3:
+        {
+            cell.accessoryType = UITableViewCellAccessoryDetailButton;
+            cell.detailTextLabel.text = @"";
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    
     
     NSArray * array = [_listArray objectAtIndex:indexPath.section];
     
@@ -102,39 +134,62 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-    if (indexPath.section == 0) {
-        //继续
-        if (indexPath.row == 0) {
-            [self.navigationController popToRootViewControllerAnimated:YES];
+    switch (indexPath.section) {
+        case 0:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    [self.navigationController popToRootViewControllerAnimated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    [_delegate agreeGame];
+                    [self.navigationController popToRootViewControllerAnimated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
         }
-        
-        if (indexPath.row == 1) {
-#warning 重新开始
-            
-            
-            
-        }
-        
-    }
-    
-    if (indexPath.section == 1) {
-        if (indexPath.row == 0) {
+            break;
+        case 1:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
 #warning 音效
-        }
-        if (indexPath.row == 1) {
+                     NSLog(@"音效");
+                }
+                    break;
+                case 1:
+                {
 #warning 音乐
+                    NSLog(@"音乐");
+                }
+                    break;
+                default:
+                    break;
+            }
         }
-    }
-    
-    if (indexPath.section == 2 && indexPath.row == 0) {
+            break;
+        case 2:
+        {
 #warning 排行榜
+            NSLog(@"排行榜");
+        }
+            break;
+        case 3:
+        {
+            #warning 图片
+            NSLog(@"图片 %d",indexPath.row);
+        }
+            break;
+            
+        default:
+            break;
     }
-    
-    if (indexPath.section == 3) {
-#warning 图片
-    }
-    
 
 
     

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+
 @interface ListViewController : UIViewController <UITableViewDataSource,UITableViewDelegate> {
     
     UITableView * listTableView;
@@ -16,5 +18,7 @@
     
     
 }
+
+@property (nonatomic, strong) ViewController * delegate;
 
 @end

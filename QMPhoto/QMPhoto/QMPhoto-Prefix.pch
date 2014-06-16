@@ -20,5 +20,5 @@
 
 #import "VerticalButton.h"
 
-
+#import "SoundClass.h"
 #endif

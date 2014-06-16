@@ -89,12 +89,18 @@
     
     
     ListViewController * ctrl = [[ListViewController alloc]init];
-    
+    ctrl.delegate = self;
     [self.navigationController pushViewController: ctrl animated:YES];
     
 }
 
 
+#pragma mark - 重新开始
+- (void)agreeGame {
+    
+    NSLog(@"重新开始");
+#warning 重新开始
+}
 
 
 
@@ -168,16 +174,10 @@
     [self.interstitial loadRequest: [appDelegate createRequest]];
     //    interstitialButton_.enabled = NO;
 }
-
-
-/// Called when an interstitial ad request succeeded. Show it at the next transition point in your
-/// application such as when transitioning between view controllers.
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{
     [ad presentFromRootViewController:self];
 }
 
-
-/// Called just after dismissing an interstitial and it has animated off the screen.
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
     
     [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];

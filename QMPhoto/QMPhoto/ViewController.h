@@ -36,4 +36,11 @@
 
 
 @property(nonatomic, retain) GADInterstitial *interstitial;
+
+
+/**
+ *  重新开始
+ */
+- (void)agreeGame;
+
 @end
