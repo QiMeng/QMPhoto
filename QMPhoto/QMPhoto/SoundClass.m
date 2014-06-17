@@ -42,7 +42,18 @@
     return self;
 }
 
-
++ (NSString *)soundStatus {
+    
+    //背景音乐
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound]) {
+        
+        return @"关";
+    }else {
+        return @"开";
+    }
+    
+    
+}
 
 //播放特效
 + (void)mergerSound {

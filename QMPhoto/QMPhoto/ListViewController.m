@@ -8,6 +8,9 @@
 
 #import "ListViewController.h"
 #import "ViewController.h"
+
+#import "PhotoViewController.h"
+
 @interface ListViewController ()
 
 @property (nonatomic, strong) NSArray * listArray;
@@ -99,7 +102,7 @@
         case 1:
         {
             cell.accessoryType = UITableViewCellAccessoryNone;
-            cell.detailTextLabel.text = @"开";
+            cell.detailTextLabel.text = [SoundClass soundStatus];
            
         }
             break;
@@ -182,8 +185,10 @@
             break;
         case 3:
         {
-            #warning 图片
-            NSLog(@"图片 %d",indexPath.row);
+            PhotoViewController * ctrl = [[PhotoViewController alloc]init];
+            ctrl.selectPhoto = indexPath.row;
+            [self.navigationController pushViewController: ctrl animated:YES];
+            
         }
             break;
             
@@ -191,9 +196,6 @@
             break;
     }
 
-
-    
-    
     
 }
 

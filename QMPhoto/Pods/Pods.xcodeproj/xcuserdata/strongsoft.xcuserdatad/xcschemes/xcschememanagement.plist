@@ -6,67 +6,41 @@
 	<dict>
 		<key>Pods-ATMHud.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-MZAppearance.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-MZFormSheetController.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-QDImageCropper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ZYQAssetPickerController.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-iCarousel.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>0E815DFB2B644F35BEF4FA5A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>36915E4A17B54CDCA3AFD141</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4503CCC6A856483D8C49C4DD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A5A32353E1F042CD9A0A7D9B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B9093780D4FC4A2AB3E89F64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C8B6AFBC715D4F65BBE1B4AF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

@@ -22,7 +22,7 @@
  *  声音特效
  */
 + (void)mergerSound;
-
++ (NSString *)soundStatus ;
 /**
  *  背景音乐
  */

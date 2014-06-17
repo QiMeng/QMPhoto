@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B60472E36AFF4E8CB89B761A"
-               BuildableName = "libPods-MZFormSheetController.a"
-               BlueprintName = "Pods-MZFormSheetController"
+               BlueprintIdentifier = "8481B85802E141B1971BC1C7"
+               BuildableName = "libPods-QDImageCropper.a"
+               BlueprintName = "Pods-QDImageCropper"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

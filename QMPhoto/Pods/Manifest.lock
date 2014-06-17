@@ -4,12 +4,14 @@ PODS:
   - MZAppearance (1.1.3)
   - MZFormSheetController (2.3.4):
     - MZAppearance (~> 1.1.3)
+  - QDImageCropper (0.0.3)
   - ZYQAssetPickerController (1.0.0)
 
 DEPENDENCIES:
   - ATMHud
   - iCarousel
   - MZFormSheetController
+  - QDImageCropper
   - ZYQAssetPickerController
 
 SPEC CHECKSUMS:
@@ -17,6 +19,7 @@ SPEC CHECKSUMS:
   iCarousel: c35a4e26b3c657847e523012b593e70ddbd84992
   MZAppearance: c88502c0c2345120630c34e09d5ff09e2969ba30
   MZFormSheetController: 8c453908080c338274e68908849029435d3e2736
+  QDImageCropper: c4963425057ef574674867640dcd192fe5504282
   ZYQAssetPickerController: caeaec5b3c6692e86a7e5b400d3f99e657b59c5f
 
 COCOAPODS: 0.32.1

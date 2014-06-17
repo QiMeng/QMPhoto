@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0E815DFB2B644F35BEF4FA5A"
+               BlueprintIdentifier = "DEA12E83F94F4F8188239624"
                BuildableName = "libPods-ATMHud.a"
                BlueprintName = "Pods-ATMHud"
                ReferencedContainer = "container:Pods.xcodeproj">

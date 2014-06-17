@@ -24,6 +24,12 @@
 #define COCOAPODS_VERSION_MINOR_MZFormSheetController 3
 #define COCOAPODS_VERSION_PATCH_MZFormSheetController 4
 
+// QDImageCropper
+#define COCOAPODS_POD_AVAILABLE_QDImageCropper
+#define COCOAPODS_VERSION_MAJOR_QDImageCropper 0
+#define COCOAPODS_VERSION_MINOR_QDImageCropper 0
+#define COCOAPODS_VERSION_PATCH_QDImageCropper 3
+
 // ZYQAssetPickerController
 #define COCOAPODS_POD_AVAILABLE_ZYQAssetPickerController
 #define COCOAPODS_VERSION_MAJOR_ZYQAssetPickerController 1

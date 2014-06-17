@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */; };
 		C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B107697AF0D4FE69053C454 /* libPods.a */; };
 		F0A94742194F185F002CB0B4 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0A94741194F185F002CB0B4 /* sound.mp3 */; };
 		F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A94744194F187E002CB0B4 /* SoundClass.m */; };
@@ -85,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C1A68AD195003A500E6B9E7 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		8B107697AF0D4FE69053C454 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F0A94741194F185F002CB0B4 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				F0E2F583194BFC9000C3CC92 /* ViewController.m */,
 				F0ABF344194D255B00D7CF21 /* ListViewController.h */,
 				F0ABF345194D255B00D7CF21 /* ListViewController.m */,
+				7C1A68AD195003A500E6B9E7 /* PhotoViewController.h */,
+				7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */,
 				F0ABF326194D20B600D7CF21 /* base */,
 				F0ABF320194D1A5400D7CF21 /* M2Texture.h */,
 				F0ABF321194D1A5400D7CF21 /* M2Texture.m */,
@@ -569,6 +574,7 @@
 				F0E2F5A4194C14E800C3CC92 /* UIView+Size.m in Sources */,
 				F0ABF325194D1A5400D7CF21 /* QMLocal.m in Sources */,
 				F0ABF329194D20C700D7CF21 /* VerticalButton.m in Sources */,
+				7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
