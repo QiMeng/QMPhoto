@@ -186,7 +186,7 @@
         case 3:
         {
             PhotoViewController * ctrl = [[PhotoViewController alloc]init];
-            ctrl.selectPhoto = indexPath.row;
+            ctrl.selectPhoto = (int)indexPath.row;
             [self.navigationController pushViewController: ctrl animated:YES];
             
         }
