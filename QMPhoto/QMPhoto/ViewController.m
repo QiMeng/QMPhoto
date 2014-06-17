@@ -40,9 +40,6 @@
     gameView.layer.cornerRadius = 5;
     
     
-    
-    
-    
     UIActivityIndicatorView* activityIndicatorView = [ [ UIActivityIndicatorView alloc ]
                                                       init];
     activityIndicatorView.center = self.view.center;
