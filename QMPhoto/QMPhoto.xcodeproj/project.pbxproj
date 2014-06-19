@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */; };
 		C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B107697AF0D4FE69053C454 /* libPods.a */; };
+		F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */; };
 		F0A94742194F185F002CB0B4 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0A94741194F185F002CB0B4 /* sound.mp3 */; };
 		F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A94744194F187E002CB0B4 /* SoundClass.m */; };
 		F0ABF31E194D147500D7CF21 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31C194D147500D7CF21 /* list.png */; };
@@ -90,6 +91,8 @@
 		7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		8B107697AF0D4FE69053C454 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F04170ED19532515000AFBC7 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
 		F0A94741194F185F002CB0B4 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		F0A94743194F187E002CB0B4 /* SoundClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundClass.h; sourceTree = "<group>"; };
 		F0A94744194F187E002CB0B4 /* SoundClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundClass.m; sourceTree = "<group>"; };
@@ -205,6 +208,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F04170EC19532515000AFBC7 /* VPImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				F04170ED19532515000AFBC7 /* VPImageCropperViewController.h */,
+				F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */,
+			);
+			path = VPImageCropper;
+			sourceTree = "<group>";
+		};
 		F0ABF31B194D147500D7CF21 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +350,7 @@
 		F0E2F570194BFC9000C3CC92 /* QMPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				F04170EC19532515000AFBC7 /* VPImageCropper */,
 				F0D733D8194C8F4B00AE6C79 /* GoogleMobileAdsSdkiOS-6.9.2 */,
 				F0E2F579194BFC9000C3CC92 /* AppDelegate.h */,
 				F0E2F57A194BFC9000C3CC92 /* AppDelegate.m */,
@@ -567,6 +580,7 @@
 			files = (
 				F0E2F584194BFC9000C3CC92 /* ViewController.m in Sources */,
 				F0ABF346194D255B00D7CF21 /* ListViewController.m in Sources */,
+				F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */,
 				F0ABF324194D1A5400D7CF21 /* M2Texture.m in Sources */,
 				F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */,
 				F0E2F57B194BFC9000C3CC92 /* AppDelegate.m in Sources */,

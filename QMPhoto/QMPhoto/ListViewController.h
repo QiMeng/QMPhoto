@@ -16,7 +16,8 @@
     
     
     
-    
+    int selectInt;
+
 }
 
 @property (nonatomic, strong) ViewController * delegate;
