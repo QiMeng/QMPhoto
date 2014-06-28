@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8481B85802E141B1971BC1C7"
+               BlueprintIdentifier = "40FD24BC3C8D460CB4DDC0B6"
                BuildableName = "libPods-QDImageCropper.a"
                BlueprintName = "Pods-QDImageCropper"
                ReferencedContainer = "container:Pods.xcodeproj">

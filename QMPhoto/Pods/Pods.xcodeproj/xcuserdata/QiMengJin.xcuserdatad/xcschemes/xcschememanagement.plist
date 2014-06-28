@@ -8,113 +8,81 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-MZAppearance.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-MZFormSheetController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Pods-QDImageCropper.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SIAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ZYQAssetPickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Pods-iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0366CF55F86441EDBC6CB601</key>
+		<key>0F3F73F20DE5447AB0A34F4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0E815DFB2B644F35BEF4FA5A</key>
+		<key>40FD24BC3C8D460CB4DDC0B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DFB528551FA490FA99290F2</key>
+		<key>5805E79BB29A48A4BE563C6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36915E4A17B54CDCA3AFD141</key>
+		<key>602FB83362A3401AB893B124</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43943AAB7F8549019B07FA78</key>
+		<key>633E82BB2EAF49EE88F1D92D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4503CCC6A856483D8C49C4DD</key>
+		<key>8116E231CD334786AE2DFFC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AC7DE5E6E5844D181B9D79F</key>
+		<key>BBE1C997FBC64ACD97C09917</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8481B85802E141B1971BC1C7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A5A32353E1F042CD9A0A7D9B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B60472E36AFF4E8CB89B761A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B9093780D4FC4A2AB3E89F64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C8B6AFBC715D4F65BBE1B4AF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DEA12E83F94F4F8188239624</key>
+		<key>D42869AD716343FC9C50D18A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

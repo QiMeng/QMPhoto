@@ -16,6 +16,8 @@
 
 #include "NCSGameCenter.h"
 
+#import <SIAlertView.h>
+
 @interface ViewController ()
 
 @end
@@ -81,7 +83,7 @@
     
     [self admobAds];
 
-    
+    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:30];
 }
 
 //切换主题
@@ -110,12 +112,6 @@
 }
 
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    [self showInterstitial:nil];
-}
-
 #pragma mark - 进入设置界面
 - (IBAction)goToSetView:(id)sender {
     
@@ -135,6 +131,33 @@
 
 #pragma mark - 游戏结束
 - (void)endGame:(BOOL)isWin  {
+    
+    
+    NSString * title = @"";
+    
+    if (isWin) {
+        title = @"通关啦!";
+    }else {
+        
+        title = @"GAME OVER!";
+        
+    }
+    
+    SIAlertView * alert = [[SIAlertView alloc]initWithTitle:title andMessage:[NSString stringWithFormat:@"得分:%@\n最高:%@",currentLabel.text,highestLabel.text]];
+    
+    [alert addButtonWithTitle:@"再来一次" type:SIAlertViewButtonTypeDefault handler:^(SIAlertView *alertView) {
+        [self agreeGame];
+    }];
+    
+    [alert addButtonWithTitle:@"排行榜" type:SIAlertViewButtonTypeCancel handler:^(SIAlertView *alertView) {
+        
+        [[NCSGameCenter sharedGameCenter] showLeaderboard];
+        
+    }];
+    
+    [alert show];
+    
+    
     
 }
 - (void)updateScore:(int)score {
@@ -211,8 +234,13 @@
     }
     
     tileNumImage.image =  [UIImage imageNamed:[NSString stringWithFormat:@"%d",[GSTATE valueForLevel:index+1]]];
+   
+    tileNumImage.hidden = ![[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile];
     
     ((UIImageView*)view).image = [TextureState imageForLevel:index];
+    
+    
+    
     
     return view;
     
@@ -246,14 +274,18 @@
 
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
     
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];
+    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:60];
 }
 - (void)interstitialWillLeaveApplication:(GADInterstitial *)ad {
 //    self.interstitial.delegate = nil;
 //    
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];
+    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:60];
 }
-
+- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error {
+    
+//    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];
+    
+}
 
 #pragma mark - 添加广告
 - (void)admobAds {

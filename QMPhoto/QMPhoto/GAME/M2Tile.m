@@ -191,6 +191,8 @@
     
     _valueImage1.image =  [UIImage imageNamed:[NSString stringWithFormat:@"%d",[GSTATE valueForLevel:self.level]]];//[TextureState imageForLevel:self.level-1];
     
+    _valueImage1.hidden = ![[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile];
+    
 //    _valueImage.clipsToBounds = YES;
 
     [self viewLineColor:[GSTATE colorForLevel:self.level] borderWidth:2 cornerRadius:0];

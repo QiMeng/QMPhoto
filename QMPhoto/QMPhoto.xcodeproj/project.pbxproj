@@ -21,6 +21,7 @@
 		F0A43CB1195E9DEA00DC0C27 /* UILabel+QM_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CB0195E9DEA00DC0C27 /* UILabel+QM_Category.m */; };
 		F0A43CB5195EA96700DC0C27 /* NCSGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CB4195EA96700DC0C27 /* NCSGameCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F0A43CB9195EC30700DC0C27 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0A43CB8195EC30600DC0C27 /* sound.mp3 */; };
+		F0A43CBC195F065300DC0C27 /* EndGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CBB195F065300DC0C27 /* EndGameViewController.m */; };
 		F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A94744194F187E002CB0B4 /* SoundClass.m */; };
 		F0ABF31E194D147500D7CF21 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31C194D147500D7CF21 /* list.png */; };
 		F0ABF31F194D147500D7CF21 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31D194D147500D7CF21 /* list@2x.png */; };
@@ -125,6 +126,8 @@
 		F0A43CB3195EA96700DC0C27 /* NCSGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSGameCenter.h; sourceTree = "<group>"; };
 		F0A43CB4195EA96700DC0C27 /* NCSGameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCSGameCenter.m; sourceTree = "<group>"; };
 		F0A43CB8195EC30600DC0C27 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		F0A43CBA195F065300DC0C27 /* EndGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndGameViewController.h; sourceTree = "<group>"; };
+		F0A43CBB195F065300DC0C27 /* EndGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndGameViewController.m; sourceTree = "<group>"; };
 		F0A94743194F187E002CB0B4 /* SoundClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundClass.h; sourceTree = "<group>"; };
 		F0A94744194F187E002CB0B4 /* SoundClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundClass.m; sourceTree = "<group>"; };
 		F0ABF31C194D147500D7CF21 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
@@ -437,6 +440,8 @@
 				F0ABF345194D255B00D7CF21 /* ListViewController.m */,
 				7C1A68AD195003A500E6B9E7 /* PhotoViewController.h */,
 				7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */,
+				F0A43CBA195F065300DC0C27 /* EndGameViewController.h */,
+				F0A43CBB195F065300DC0C27 /* EndGameViewController.m */,
 				F0ABF326194D20B600D7CF21 /* base */,
 				F0ABF320194D1A5400D7CF21 /* M2Texture.h */,
 				F0ABF321194D1A5400D7CF21 /* M2Texture.m */,
@@ -666,6 +671,7 @@
 				F0A43CA8195E9C3D00DC0C27 /* M2GlobalState.m in Sources */,
 				F0A43CAA195E9C3D00DC0C27 /* M2Scene.m in Sources */,
 				F0A43CA9195E9C3D00DC0C27 /* M2Grid.m in Sources */,
+				F0A43CBC195F065300DC0C27 /* EndGameViewController.m in Sources */,
 				F0A43CB5195EA96700DC0C27 /* NCSGameCenter.m in Sources */,
 				F0E2F5A4194C14E800C3CC92 /* UIView+Size.m in Sources */,
 				F0A43CAD195E9C3D00DC0C27 /* M2Tile.m in Sources */,
@@ -748,7 +754,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -766,6 +773,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -787,7 +795,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -798,6 +807,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -810,6 +820,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
 				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
@@ -819,6 +830,7 @@
 					"$(PROJECT_DIR)/QMPhoto/GoogleMobileAdsSdkiOS-6.9.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -830,6 +842,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
 				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
@@ -839,6 +852,7 @@
 					"$(PROJECT_DIR)/QMPhoto/GoogleMobileAdsSdkiOS-6.9.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

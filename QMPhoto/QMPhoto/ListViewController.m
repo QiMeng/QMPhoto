@@ -48,13 +48,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBarHidden = NO;
+
     
     self.title = @"设置";
     
     _listArray = @[@[@"继续",@"重新开始"],@[@"音效"],@[@"排行榜"],
                    
-  TextureState.imageArray];
+  TextureState.imageArray,@[@"不显示数字"]];
     
     
     
@@ -69,6 +69,10 @@
     
     
     
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+        self.navigationController.navigationBarHidden = NO;
 }
 
 
@@ -93,8 +97,9 @@
         case 0:
         case 1:
         case 2:
+        case 4:
             break;
-            
+
         default:
             
             height = 120;
@@ -189,10 +194,18 @@
             tileImage.image = [TextureState.imageArray objectAtIndex :indexPath.row];
 //            cell.imageView.image = [TextureState.imageArray objectAtIndex :indexPath.row];
             
-            tileNumImage.image =  [UIImage imageNamed:[NSString stringWithFormat:@"%d",[GSTATE valueForLevel:indexPath.row+1]]];
+            tileNumImage.image =  [UIImage imageNamed:[NSString stringWithFormat:@"%d",(int)[GSTATE valueForLevel:indexPath.row+1]]];
   
             tileImage.hidden = NO;;
-            tileNumImage.hidden = NO;
+            tileNumImage.hidden = ![[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile];
+        }
+            break;
+            
+        case 4:
+        {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.detailTextLabel.text = [[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile]?@"显示":@"隐藏";
+            cell.imageView.image = nil;
         }
             break;
             
@@ -271,7 +284,13 @@
 
         }
             break;
+        case 4:
+        {
+            [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile] forKey:kShowNumTile];
             
+            [listTableView reloadData];
+        }
+            break;
         default:
             break;
     }
