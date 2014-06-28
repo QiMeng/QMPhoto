@@ -10,6 +10,9 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
+#define kMergerSound @"sound"
+#define kBackGroundSound @""
+
 @interface SoundClass : NSObject
 
 @property (nonatomic, strong) AVAudioPlayer *mergerSound;   //特效

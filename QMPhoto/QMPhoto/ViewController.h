@@ -13,7 +13,12 @@
 
 #import "GADInterstitial.h"
 #import "GADInterstitialDelegate.h"
-@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate,GADInterstitialDelegate>{
+
+#import "GADBannerView.h"
+
+#import "M2Scene.h"
+
+@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate,GADInterstitialDelegate,GADBannerViewDelegate>{
     
     __weak IBOutlet UIView *preView;
     iCarousel *myCarousel;
@@ -23,15 +28,15 @@
     __weak IBOutlet UILabel *currentLabel;
     
     __weak IBOutlet UILabel *highestLabel;
-    
-    
 
     
-    
-    __weak IBOutlet UIView *gameView;
+    M2Scene *gameView;
     
     
     GADInterstitial *interstitial_;
+    
+    // 广告条
+    GADBannerView *bannerView_;
 }
 
 
@@ -42,5 +47,12 @@
  *  重新开始
  */
 - (void)agreeGame;
+
+- (void)endGame:(BOOL)isWin ;
+
+- (void)updateScore:(int)score;
+
+- (void)currentBaseLevel:(int)level;
+
 
 @end

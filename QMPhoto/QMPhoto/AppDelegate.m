@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#include "NCSGameCenter.h"
+
 #define INTERSTITIAL_AD_UNIT_ID @"ca-app-pub-5240802043946893/6788370961"
 
 
@@ -25,6 +27,9 @@
     [splashInterstitial_ loadAndDisplayRequest:[self createRequest]
                                    usingWindow:self.window
                                   initialImage:[UIImage imageNamed:@"InitialImage"]];
+    
+
+    [[NCSGameCenter sharedGameCenter] authenticateLocalUser];
     
     
     return YES;

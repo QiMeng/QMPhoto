@@ -9,8 +9,7 @@
 #import "SoundClass.h"
 
 
-#define kMergerSound @"sound"
-#define kBackGroundSound @""
+
 
 
 @implementation SoundClass

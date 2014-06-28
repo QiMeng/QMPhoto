@@ -16,6 +16,8 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
+#include "NCSGameCenter.h"
+
 #define ORIGINAL_MAX_WIDTH 640.0f
 
 @interface ListViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate,VPImageCropperDelegate,UIActionSheetDelegate>
@@ -50,15 +52,14 @@
     
     self.title = @"设置";
     
-    _listArray = @[@[@"继续",@"重新开始"],
-  @[@"音效",@"音乐"],
-                   @[@"排行榜"],
+    _listArray = @[@[@"继续",@"重新开始"],@[@"音效"],@[@"排行榜"],
                    
-  @[@"2",@"4",@"8",@"16",@"32",@"64",@"128",@"256",@"512",@"1024",@"2048"]];
+  TextureState.imageArray];
     
     
     
     listTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    listTableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleBottomMargin;
     listTableView.delegate = self;
     listTableView.dataSource = self;
     [self.view addSubview:listTableView];
@@ -91,7 +92,7 @@
     switch (indexPath.section) {
         case 0:
         case 1:
-            case 2:
+        case 2:
             break;
             
         default:
@@ -113,11 +114,50 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdetify];
     }
     
+    UIImageView * tileImage = (UIImageView *)[cell.contentView viewWithTag:201];
+    if (!tileImage) {
+        tileImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 120, 120)];
+        tileImage.contentMode = UIViewContentModeScaleAspectFill;
+        tileImage.backgroundColor = [UIColor whiteColor];
+        tileImage.layer.cornerRadius = 5;
+        tileImage.clipsToBounds = YES;
+        tileImage.tag = 201;
+        [cell.contentView addSubview:tileImage];
+    }
+    
+    tileImage.hidden = YES;;
+
+    
+    
+    
+    UIImageView * tileNumImage = (UIImageView *)[cell.contentView viewWithTag:200];
+    if (!tileNumImage) {
+        tileNumImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 120, 120)];
+        tileNumImage.contentMode = UIViewContentModeScaleAspectFill;
+        tileNumImage.backgroundColor = [UIColor clearColor];
+        tileNumImage.layer.cornerRadius = 5;
+        tileNumImage.clipsToBounds = YES;
+        tileNumImage.tag = 200;
+        [cell.contentView addSubview:tileNumImage];
+    }
+    
+    tileNumImage.hidden = YES;
+    
+    
+    
+    
+    
+    
     
     NSArray * array = [_listArray objectAtIndex:indexPath.section];
     
-    cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    id data = [array objectAtIndex:indexPath.row];
     
+    if ([data isKindOfClass:[NSString class]]) {
+        cell.textLabel.text = data;
+    }else  {
+        cell.textLabel.text = @"";
+    }
     
     switch (indexPath.section) {
         case 0:
@@ -146,8 +186,13 @@
             cell.accessoryType = UITableViewCellAccessoryDetailButton;
             cell.detailTextLabel.text = @"";
             
-            cell.imageView.image = [TextureState imageForLevel:indexPath.row];
+            tileImage.image = [TextureState.imageArray objectAtIndex :indexPath.row];
+//            cell.imageView.image = [TextureState.imageArray objectAtIndex :indexPath.row];
+            
+            tileNumImage.image =  [UIImage imageNamed:[NSString stringWithFormat:@"%d",[GSTATE valueForLevel:indexPath.row+1]]];
   
+            tileImage.hidden = NO;;
+            tileNumImage.hidden = NO;
         }
             break;
             
@@ -192,14 +237,19 @@
             switch (indexPath.row) {
                 case 0:
                 {
-#warning 音效
-                     NSLog(@"音效");
+
+                    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound] forKey:kMergerSound];
+
+                    [listTableView reloadData];
+
+                    [SoundClass mergerSound];
+                    
                 }
                     break;
                 case 1:
                 {
 #warning 音乐
-                    NSLog(@"音乐");
+
                 }
                     break;
                 default:
@@ -209,8 +259,7 @@
             break;
         case 2:
         {
-#warning 排行榜
-            NSLog(@"排行榜");
+            [[NCSGameCenter sharedGameCenter] showLeaderboard];
         }
             break;
         case 3:
@@ -218,12 +267,8 @@
             
             selectInt = indexPath.row;
             
-            
             [self editPortrait];
-//            PhotoViewController * ctrl = [[PhotoViewController alloc]init];
-//            ctrl.selectPhoto = (int)indexPath.row;
-//            [self.navigationController pushViewController: ctrl animated:YES];
-            
+
         }
             break;
             
@@ -326,6 +371,8 @@
         imgEditorVC.delegate = self;
         [self presentViewController:imgEditorVC animated:YES completion:^{
             // TO DO
+            
+            [listTableView reloadData];
         }];
     }];
 }

@@ -21,4 +21,20 @@
 #import "VerticalButton.h"
 
 #import "SoundClass.h"
+
+#import "M2GlobalState.h"
+
 #endif
+
+
+#define MY_BANNER_UNIT_ID @"ca-app-pub-5240802043946893/5311637765"
+
+
+
+#define DEVICE_SCREEN_RECT  [UIScreen mainScreen].applicationFrame
+#define DEVICE_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define DEVICE_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+
+#define kEmpty 5
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
