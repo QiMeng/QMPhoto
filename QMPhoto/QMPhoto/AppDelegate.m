@@ -10,6 +10,8 @@
 
 #include "NCSGameCenter.h"
 
+#import "MobClick.h"
+
 #define INTERSTITIAL_AD_UNIT_ID @"ca-app-pub-5240802043946893/6788370961"
 
 
@@ -19,14 +21,11 @@
 {
     // Override point for customization after application launch.
     
-    splashInterstitial_ = [[GADInterstitial alloc] init];
+    [MobClick startWithAppkey:kUMengKey reportPolicy:BATCH  channelId:@"dev"];
+    [MobClick setLogEnabled:YES];
     
-    splashInterstitial_.adUnitID = self.interstitialAdUnitID;
-    splashInterstitial_.delegate = self;
     
-    [splashInterstitial_ loadAndDisplayRequest:[self createRequest]
-                                   usingWindow:self.window
-                                  initialImage:[UIImage imageNamed:@"InitialImage"]];
+
     
 
     [[NCSGameCenter sharedGameCenter] authenticateLocalUser];
@@ -34,20 +33,7 @@
     
     return YES;
 }
-- (NSString *)interstitialAdUnitID {
-    return INTERSTITIAL_AD_UNIT_ID;
-}
-- (GADRequest *)createRequest {
-    GADRequest *request = [GADRequest request];
-    // Make the request for a test ad. Put in an identifier for the simulator as
-    // well as any devices you want to receive test ads.
-    request.testDevices =
-    [NSArray arrayWithObjects:
-     // TODO: Add your device/simulator test identifiers here. They are
-     // printed to the console when the app is launched.
-     nil];
-    return request;
-}
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

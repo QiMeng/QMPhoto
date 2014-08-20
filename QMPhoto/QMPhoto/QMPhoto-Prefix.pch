@@ -41,3 +41,11 @@
 
 
 #define kShowNumTile @"shownumtile"
+
+
+#define kUMengKey @"536b8c9d56240b0a7601951d" //友盟key
+
+
+
+
+

@@ -7,17 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GADInterstitial.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,GADInterstitialDelegate> {
-    
-    GADInterstitial *splashInterstitial_;
-}
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property(nonatomic, readonly) NSString *interstitialAdUnitID;
 
-- (GADRequest *)createRequest;
+
+
 
 @end

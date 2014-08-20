@@ -77,13 +77,11 @@
 
             [activityIndicatorView stopAnimating];
             
+            [self initializeBanner];
+            
         });
     });
     
-    
-    [self admobAds];
-
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:30];
 }
 
 //切换主题
@@ -114,7 +112,6 @@
 
 #pragma mark - 进入设置界面
 - (IBAction)goToSetView:(id)sender {
-    
     
     ListViewController * ctrl = [[ListViewController alloc]init];
     ctrl.delegate = self;
@@ -239,79 +236,57 @@
     
     ((UIImageView*)view).image = [TextureState imageForLevel:index];
     
-    
-    
-    
     return view;
     
 }
 
-#pragma mark - 广告
-
-- (void)showInterstitial:(id)sender {
-
-    self.interstitial = [[GADInterstitial alloc] init];
-    self.interstitial.delegate = self;
+#pragma mark - 添加iad
+//自定义的函式 Banner初始化（以画面直立）
+- (void)initializeBanner {
     
-    AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
-    self.interstitial.adUnitID = appDelegate.interstitialAdUnitID;
+    //以画面直立的方式设定Banner于画面底部
+    bannerView = [[ADBannerView alloc]initWithFrame:CGRectMake(0.0, 430.0, self.view.frame.size.width, 50.0)];
     
-    [self.interstitial loadRequest: [appDelegate createRequest]];
-    //    interstitialButton_.enabled = NO;
+    //此Banner所能支援的类型
+    bannerView.requiredContentSizeIdentifiers = [NSSet setWithObjects:ADBannerContentSizeIdentifierPortrait, ADBannerContentSizeIdentifierLandscape, nil];
+    
+    //目前的Banner 类型
+    bannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    
+    //设定代理
+    bannerView.delegate = self;
+    
+    //无法按下触发广告
+    bannerView.userInteractionEnabled = NO;
+    
+    //设定偏位移量
+    bannerView.frame = CGRectOffset(bannerView.frame, 0, 50);
+    
+    [self.view addSubview:bannerView];  
 }
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad{
-    [ad presentFromRootViewController:self];
-}
-
-- (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
+- (void)bannerViewAnimation {
     
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:60];
-}
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad {
-//    self.interstitial.delegate = nil;
-//    
-    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:60];
-}
-- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error {
+    //动画设定
+    [UIView beginAnimations:@"BannerViewAnimation" context:NULL];
     
-//    [self performSelector:@selector(showInterstitial:) withObject:nil afterDelay:10];
+    //以userInteractionEnabled状态排判断bannerView是否在画面内
+    if (bannerView.userInteractionEnabled) {
+        bannerView.frame = CGRectOffset(bannerView.frame, 0, 50);
+    }
+    else {
+        bannerView.frame = CGRectOffset(bannerView.frame, 0, -50);
+    }
     
+    //开始动画
+    [UIView commitAnimations];
+    
+    //将userInteractionEnabled做反向设定
+    bannerView.userInteractionEnabled = !bannerView.userInteractionEnabled;
 }
-
-#pragma mark - 添加广告
-- (void)admobAds {
-    
-    //广告应用
-    bannerView_ = [[GADBannerView alloc]
-                   initWithFrame:CGRectMake(0.0,
-                                            self.view.frame.size.height -
-                                            GAD_SIZE_320x50.height,
-                                            GAD_SIZE_320x50.width,
-                                            GAD_SIZE_320x50.height)];
-
-    // 指定广告单元ID。
-    bannerView_.delegate = self;
-    bannerView_.adUnitID = MY_BANNER_UNIT_ID;
-    bannerView_.rootViewController = self;
-    [self.view addSubview:bannerView_];
-    [bannerView_ loadRequest:[GADRequest request]];
-    
-    
-    //#warning 测试广告应用
-    //    GADRequest *request = [GADRequest request];
-    //    request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
-    //    [bannerView_ loadRequest:request];
-    
+//当ADBannerView完成读取广告时会触发的事件
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    [self bannerViewAnimation];
 }
-- (void)adViewDidReceiveAd:(GADBannerView *)adView {
-    NSLog(@"Received ad successfully");
-}
-- (void)adView:(GADBannerView *)view
-didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"Failed to receive ad with error: %@", [error localizedFailureReason]);
-}
-
-
 
 - (void)didReceiveMemoryWarning
 {

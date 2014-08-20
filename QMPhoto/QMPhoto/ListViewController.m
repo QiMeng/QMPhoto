@@ -250,26 +250,17 @@
             switch (indexPath.row) {
                 case 0:
                 {
-<<<<<<< HEAD
-#warning 音效
-                     NSLog(@"音效");
-                    
-                    
-                    
-=======
 
                     [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound] forKey:kMergerSound];
 
                     [listTableView reloadData];
 
                     [SoundClass mergerSound];
->>>>>>> FETCH_HEAD
                     
                 }
                     break;
                 case 1:
                 {
-#warning 音乐
 
                 }
                     break;

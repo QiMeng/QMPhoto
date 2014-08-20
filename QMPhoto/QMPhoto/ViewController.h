@@ -11,14 +11,11 @@
 #import <iCarousel.h>
 #import <MZFormSheetController.h>
 
-#import "GADInterstitial.h"
-#import "GADInterstitialDelegate.h"
 
-#import "GADBannerView.h"
-
+#import <iAd/iAd.h>
 #import "M2Scene.h"
 
-@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate,GADInterstitialDelegate,GADBannerViewDelegate>{
+@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate, ADBannerViewDelegate>{
     
     __weak IBOutlet UIView *preView;
     iCarousel *myCarousel;
@@ -32,15 +29,9 @@
     
     M2Scene *gameView;
     
+    ADBannerView *bannerView;
     
-    GADInterstitial *interstitial_;
-    
-    // 广告条
-    GADBannerView *bannerView_;
 }
-
-
-@property(nonatomic, retain) GADInterstitial *interstitial;
 
 
 /**
