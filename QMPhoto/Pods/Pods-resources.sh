@@ -44,6 +44,7 @@ install_resource()
 install_resource "ATMHud/11-x.png"
 install_resource "ATMHud/19-check.png"
 install_resource "ATMHud/pop.wav"
+install_resource "SIAlertView/SIAlertView/SIAlertView.bundle"
 install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

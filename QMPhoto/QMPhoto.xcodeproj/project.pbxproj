@@ -9,7 +9,19 @@
 /* Begin PBXBuildFile section */
 		7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */; };
 		C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B107697AF0D4FE69053C454 /* libPods.a */; };
-		F0A94742194F185F002CB0B4 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0A94741194F185F002CB0B4 /* sound.mp3 */; };
+		F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */; };
+		F0A43CA5195E9C3D00DC0C27 /* BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C93195E9C3D00DC0C27 /* BaseAnimation.m */; };
+		F0A43CA6195E9C3D00DC0C27 /* M2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C95195E9C3D00DC0C27 /* M2Cell.m */; };
+		F0A43CA7195E9C3D00DC0C27 /* M2GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C97195E9C3D00DC0C27 /* M2GameManager.m */; };
+		F0A43CA8195E9C3D00DC0C27 /* M2GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C99195E9C3D00DC0C27 /* M2GlobalState.m */; };
+		F0A43CA9195E9C3D00DC0C27 /* M2Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C9B195E9C3D00DC0C27 /* M2Grid.m */; };
+		F0A43CAA195E9C3D00DC0C27 /* M2Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C9E195E9C3D00DC0C27 /* M2Scene.m */; };
+		F0A43CAC195E9C3D00DC0C27 /* M2Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CA2195E9C3D00DC0C27 /* M2Theme.m */; };
+		F0A43CAD195E9C3D00DC0C27 /* M2Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CA4195E9C3D00DC0C27 /* M2Tile.m */; };
+		F0A43CB1195E9DEA00DC0C27 /* UILabel+QM_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CB0195E9DEA00DC0C27 /* UILabel+QM_Category.m */; };
+		F0A43CB5195EA96700DC0C27 /* NCSGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CB4195EA96700DC0C27 /* NCSGameCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F0A43CB9195EC30700DC0C27 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0A43CB8195EC30600DC0C27 /* sound.mp3 */; };
+		F0A43CBC195F065300DC0C27 /* EndGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CBB195F065300DC0C27 /* EndGameViewController.m */; };
 		F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A94744194F187E002CB0B4 /* SoundClass.m */; };
 		F0ABF31E194D147500D7CF21 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31C194D147500D7CF21 /* list.png */; };
 		F0ABF31F194D147500D7CF21 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31D194D147500D7CF21 /* list@2x.png */; };
@@ -90,7 +102,32 @@
 		7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		8B107697AF0D4FE69053C454 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F0A94741194F185F002CB0B4 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		F04170ED19532515000AFBC7 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		F0A43C92195E9C3D00DC0C27 /* BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimation.h; sourceTree = "<group>"; };
+		F0A43C93195E9C3D00DC0C27 /* BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimation.m; sourceTree = "<group>"; };
+		F0A43C94195E9C3D00DC0C27 /* M2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Cell.h; sourceTree = "<group>"; };
+		F0A43C95195E9C3D00DC0C27 /* M2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Cell.m; sourceTree = "<group>"; };
+		F0A43C96195E9C3D00DC0C27 /* M2GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GameManager.h; sourceTree = "<group>"; };
+		F0A43C97195E9C3D00DC0C27 /* M2GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GameManager.m; sourceTree = "<group>"; };
+		F0A43C98195E9C3D00DC0C27 /* M2GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GlobalState.h; sourceTree = "<group>"; };
+		F0A43C99195E9C3D00DC0C27 /* M2GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GlobalState.m; sourceTree = "<group>"; };
+		F0A43C9A195E9C3D00DC0C27 /* M2Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Grid.h; sourceTree = "<group>"; };
+		F0A43C9B195E9C3D00DC0C27 /* M2Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Grid.m; sourceTree = "<group>"; };
+		F0A43C9C195E9C3D00DC0C27 /* M2Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Position.h; sourceTree = "<group>"; };
+		F0A43C9D195E9C3D00DC0C27 /* M2Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Scene.h; sourceTree = "<group>"; };
+		F0A43C9E195E9C3D00DC0C27 /* M2Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Scene.m; sourceTree = "<group>"; };
+		F0A43CA1195E9C3D00DC0C27 /* M2Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Theme.h; sourceTree = "<group>"; };
+		F0A43CA2195E9C3D00DC0C27 /* M2Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Theme.m; sourceTree = "<group>"; };
+		F0A43CA3195E9C3D00DC0C27 /* M2Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Tile.h; sourceTree = "<group>"; };
+		F0A43CA4195E9C3D00DC0C27 /* M2Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Tile.m; sourceTree = "<group>"; };
+		F0A43CAF195E9DEA00DC0C27 /* UILabel+QM_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+QM_Category.h"; sourceTree = "<group>"; };
+		F0A43CB0195E9DEA00DC0C27 /* UILabel+QM_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+QM_Category.m"; sourceTree = "<group>"; };
+		F0A43CB3195EA96700DC0C27 /* NCSGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSGameCenter.h; sourceTree = "<group>"; };
+		F0A43CB4195EA96700DC0C27 /* NCSGameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCSGameCenter.m; sourceTree = "<group>"; };
+		F0A43CB8195EC30600DC0C27 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		F0A43CBA195F065300DC0C27 /* EndGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndGameViewController.h; sourceTree = "<group>"; };
+		F0A43CBB195F065300DC0C27 /* EndGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndGameViewController.m; sourceTree = "<group>"; };
 		F0A94743194F187E002CB0B4 /* SoundClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundClass.h; sourceTree = "<group>"; };
 		F0A94744194F187E002CB0B4 /* SoundClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundClass.m; sourceTree = "<group>"; };
 		F0ABF31C194D147500D7CF21 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
@@ -205,6 +242,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F04170EC19532515000AFBC7 /* VPImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				F04170ED19532515000AFBC7 /* VPImageCropperViewController.h */,
+				F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */,
+			);
+			path = VPImageCropper;
+			sourceTree = "<group>";
+		};
+		F0A43C91195E9C3D00DC0C27 /* GAME */ = {
+			isa = PBXGroup;
+			children = (
+				F0A43C92195E9C3D00DC0C27 /* BaseAnimation.h */,
+				F0A43C93195E9C3D00DC0C27 /* BaseAnimation.m */,
+				F0A43C94195E9C3D00DC0C27 /* M2Cell.h */,
+				F0A43C95195E9C3D00DC0C27 /* M2Cell.m */,
+				F0A43C96195E9C3D00DC0C27 /* M2GameManager.h */,
+				F0A43C97195E9C3D00DC0C27 /* M2GameManager.m */,
+				F0A43C98195E9C3D00DC0C27 /* M2GlobalState.h */,
+				F0A43C99195E9C3D00DC0C27 /* M2GlobalState.m */,
+				F0A43C9A195E9C3D00DC0C27 /* M2Grid.h */,
+				F0A43C9B195E9C3D00DC0C27 /* M2Grid.m */,
+				F0A43C9C195E9C3D00DC0C27 /* M2Position.h */,
+				F0A43C9D195E9C3D00DC0C27 /* M2Scene.h */,
+				F0A43C9E195E9C3D00DC0C27 /* M2Scene.m */,
+				F0A43CA1195E9C3D00DC0C27 /* M2Theme.h */,
+				F0A43CA2195E9C3D00DC0C27 /* M2Theme.m */,
+				F0A43CA3195E9C3D00DC0C27 /* M2Tile.h */,
+				F0A43CA4195E9C3D00DC0C27 /* M2Tile.m */,
+			);
+			path = GAME;
+			sourceTree = "<group>";
+		};
+		F0A43CAE195E9DEA00DC0C27 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				F0A43CAF195E9DEA00DC0C27 /* UILabel+QM_Category.h */,
+				F0A43CB0195E9DEA00DC0C27 /* UILabel+QM_Category.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		F0A43CB2195EA96700DC0C27 /* ranking */ = {
+			isa = PBXGroup;
+			children = (
+				F0A43CB3195EA96700DC0C27 /* NCSGameCenter.h */,
+				F0A43CB4195EA96700DC0C27 /* NCSGameCenter.m */,
+			);
+			path = ranking;
+			sourceTree = "<group>";
+		};
 		F0ABF31B194D147500D7CF21 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +315,7 @@
 		F0ABF326194D20B600D7CF21 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				F0A43CAE195E9DEA00DC0C27 /* UILabel */,
 				F0E2F5A2194C14E800C3CC92 /* UIView+Size.h */,
 				F0E2F5A3194C14E800C3CC92 /* UIView+Size.m */,
 				F0ABF327194D20C700D7CF21 /* VerticalButton.h */,
@@ -261,7 +350,7 @@
 		F0D733E9194CA11500AE6C79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F0A94741194F185F002CB0B4 /* sound.mp3 */,
+				F0A43CB8195EC30600DC0C27 /* sound.mp3 */,
 				F0ABF31B194D147500D7CF21 /* common */,
 				F0D733EA194CA11500AE6C79 /* tiles */,
 			);
@@ -338,6 +427,8 @@
 		F0E2F570194BFC9000C3CC92 /* QMPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				F0A43CB2195EA96700DC0C27 /* ranking */,
+				F04170EC19532515000AFBC7 /* VPImageCropper */,
 				F0D733D8194C8F4B00AE6C79 /* GoogleMobileAdsSdkiOS-6.9.2 */,
 				F0E2F579194BFC9000C3CC92 /* AppDelegate.h */,
 				F0E2F57A194BFC9000C3CC92 /* AppDelegate.m */,
@@ -349,11 +440,14 @@
 				F0ABF345194D255B00D7CF21 /* ListViewController.m */,
 				7C1A68AD195003A500E6B9E7 /* PhotoViewController.h */,
 				7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */,
+				F0A43CBA195F065300DC0C27 /* EndGameViewController.h */,
+				F0A43CBB195F065300DC0C27 /* EndGameViewController.m */,
 				F0ABF326194D20B600D7CF21 /* base */,
 				F0ABF320194D1A5400D7CF21 /* M2Texture.h */,
 				F0ABF321194D1A5400D7CF21 /* M2Texture.m */,
 				F0ABF322194D1A5400D7CF21 /* QMLocal.h */,
 				F0ABF323194D1A5400D7CF21 /* QMLocal.m */,
+				F0A43C91195E9C3D00DC0C27 /* GAME */,
 				F0D733E9194CA11500AE6C79 /* Resources */,
 				F0E2F585194BFC9000C3CC92 /* Images.xcassets */,
 				F0E2F571194BFC9000C3CC92 /* Supporting Files */,
@@ -510,7 +604,7 @@
 				F0D7340A194CA11500AE6C79 /* 128@2x.png in Resources */,
 				F0ABF341194D22F400D7CF21 /* sound@2x.png in Resources */,
 				F0D73421194CA11500AE6C79 /* 8192@2x.png in Resources */,
-				F0A94742194F185F002CB0B4 /* sound.mp3 in Resources */,
+				F0A43CB9195EC30700DC0C27 /* sound.mp3 in Resources */,
 				F0D73410194CA11500AE6C79 /* 2048.png in Resources */,
 				F0D733E8194C8F4B00AE6C79 /* README.txt in Resources */,
 				F0D7340E194CA11500AE6C79 /* 16@2x.png in Resources */,
@@ -565,14 +659,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A43CB1195E9DEA00DC0C27 /* UILabel+QM_Category.m in Sources */,
 				F0E2F584194BFC9000C3CC92 /* ViewController.m in Sources */,
 				F0ABF346194D255B00D7CF21 /* ListViewController.m in Sources */,
+				F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */,
 				F0ABF324194D1A5400D7CF21 /* M2Texture.m in Sources */,
 				F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */,
 				F0E2F57B194BFC9000C3CC92 /* AppDelegate.m in Sources */,
 				F0E2F577194BFC9000C3CC92 /* main.m in Sources */,
+				F0A43CAC195E9C3D00DC0C27 /* M2Theme.m in Sources */,
+				F0A43CA8195E9C3D00DC0C27 /* M2GlobalState.m in Sources */,
+				F0A43CAA195E9C3D00DC0C27 /* M2Scene.m in Sources */,
+				F0A43CA9195E9C3D00DC0C27 /* M2Grid.m in Sources */,
+				F0A43CBC195F065300DC0C27 /* EndGameViewController.m in Sources */,
+				F0A43CB5195EA96700DC0C27 /* NCSGameCenter.m in Sources */,
 				F0E2F5A4194C14E800C3CC92 /* UIView+Size.m in Sources */,
+				F0A43CAD195E9C3D00DC0C27 /* M2Tile.m in Sources */,
+				F0A43CA7195E9C3D00DC0C27 /* M2GameManager.m in Sources */,
+				F0A43CA6195E9C3D00DC0C27 /* M2Cell.m in Sources */,
 				F0ABF325194D1A5400D7CF21 /* QMLocal.m in Sources */,
+				F0A43CA5195E9C3D00DC0C27 /* BaseAnimation.m in Sources */,
 				F0ABF329194D20C700D7CF21 /* VerticalButton.m in Sources */,
 				7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */,
 			);
@@ -648,7 +754,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -666,6 +773,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -687,7 +795,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -698,6 +807,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -710,6 +820,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yongsheng liu (24D459F86D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
 				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
@@ -719,6 +830,7 @@
 					"$(PROJECT_DIR)/QMPhoto/GoogleMobileAdsSdkiOS-6.9.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DA655EE8-D252-466D-82D4-DFAB071CBBF2";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -730,6 +842,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yongsheng liu (24D459F86D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
 				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
@@ -739,6 +852,7 @@
 					"$(PROJECT_DIR)/QMPhoto/GoogleMobileAdsSdkiOS-6.9.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DA655EE8-D252-466D-82D4-DFAB071CBBF2";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
