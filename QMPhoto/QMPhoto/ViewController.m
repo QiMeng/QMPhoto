@@ -152,20 +152,11 @@
 #pragma mark - 广告
 
 - (void)showInterstitial:(id)sender {
-    // Create a new GADInterstitial each time.  A GADInterstitial
-    // will only show one request in its lifetime. The property will release the
-    // old one and set the new one.
-    
-    //    if (!self.interstitial) {
+
     self.interstitial = [[GADInterstitial alloc] init];
     self.interstitial.delegate = self;
-    //    }
     
-    // Note: Edit InterstitialExampleAppDelegate.m to update
-    // INTERSTITIAL_AD_UNIT_ID with your interstitial ad unit id.
-    AppDelegate *appDelegate =
-    (AppDelegate *)
-    [UIApplication sharedApplication].delegate;
+    AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
     self.interstitial.adUnitID = appDelegate.interstitialAdUnitID;
     
     [self.interstitial loadRequest: [appDelegate createRequest]];

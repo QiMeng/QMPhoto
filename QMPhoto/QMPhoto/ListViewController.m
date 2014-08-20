@@ -164,6 +164,10 @@
                 {
 #warning 音效
                      NSLog(@"音效");
+                    
+                    
+                    
+                    
                 }
                     break;
                 case 1:

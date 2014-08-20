@@ -70,7 +70,6 @@
 
 + (void)backgroundSound {
     
-    
     //背景音乐
     if ([[NSUserDefaults standardUserDefaults] boolForKey:kBackGroundSound]) {
         [[SoundClass state].backgroundSound pause];
