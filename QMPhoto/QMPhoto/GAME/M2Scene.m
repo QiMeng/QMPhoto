@@ -23,11 +23,7 @@
 
          _manager = [[M2GameManager alloc] init];
         
-        
-        
-        
-        
-        
+
         UISwipeGestureRecognizer *recognizer;
         
         recognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeFrom:)];

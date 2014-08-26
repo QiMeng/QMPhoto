@@ -52,7 +52,7 @@
     
     self.title = @"设置";
     
-    _listArray = @[@[@"继续",@"重新开始"],@[@"音效"],@[@"排行榜"],
+    _listArray = @[@[@"继续",@"重新开始"],@[@"排行榜"],
                    
   TextureState.imageArray,@[@"不显示数字"]];
     
@@ -96,7 +96,7 @@
     switch (indexPath.section) {
         case 0:
         case 1:
-        case 2:
+        case 3:
         case 4:
             break;
 
@@ -117,13 +117,16 @@
 
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdetify];
+        cell.textLabel.textColor = [UIColor blackColor];
+        cell.textLabel.font = [UIFont fontWithName:@"HiraKakuProN-W3" size:17];
+        cell.detailTextLabel.font = cell.textLabel.font;
     }
     
     UIImageView * tileImage = (UIImageView *)[cell.contentView viewWithTag:201];
     if (!tileImage) {
         tileImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 120, 120)];
         tileImage.contentMode = UIViewContentModeScaleAspectFill;
-        tileImage.backgroundColor = [UIColor whiteColor];
+        tileImage.backgroundColor = [UIColor clearColor];
         tileImage.layer.cornerRadius = 5;
         tileImage.clipsToBounds = YES;
         tileImage.tag = 201;
@@ -172,24 +175,24 @@
             cell.imageView.image = nil;
         }
             break;
+//        case 1:
+//        {
+//            cell.accessoryType = UITableViewCellAccessoryNone;
+//            cell.detailTextLabel.text = [SoundClass soundStatus];
+//           cell.imageView.image = nil;
+//        }
+//            break;
         case 1:
-        {
-            cell.accessoryType = UITableViewCellAccessoryNone;
-            cell.detailTextLabel.text = [SoundClass soundStatus];
-           cell.imageView.image = nil;
-        }
-            break;
-        case 2:
         {
             cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
             cell.detailTextLabel.text = @"";
             cell.imageView.image = nil;
         }
             break;
-        case 3:
+        case 2:
         {
             cell.accessoryType = UITableViewCellAccessoryDetailButton;
-            cell.detailTextLabel.text = @"";
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d     ",(int)[GSTATE valueForLevel:indexPath.row+1]];
             
             tileImage.image = [TextureState.imageArray objectAtIndex :indexPath.row];
 //            cell.imageView.image = [TextureState.imageArray objectAtIndex :indexPath.row];
@@ -201,7 +204,7 @@
         }
             break;
             
-        case 4:
+        case 3:
         {
             cell.accessoryType = UITableViewCellAccessoryNone;
             cell.detailTextLabel.text = [[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile]?@"显示":@"隐藏";
@@ -245,36 +248,36 @@
             }
         }
             break;
+//        case 1:
+//        {
+//            switch (indexPath.row) {
+//                case 0:
+//                {
+//
+//                    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound] forKey:kMergerSound];
+//
+//                    [listTableView reloadData];
+//
+//                    [SoundClass mergerSound];
+//                    
+//                }
+//                    break;
+//                case 1:
+//                {
+//
+//                }
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
+//            break;
         case 1:
-        {
-            switch (indexPath.row) {
-                case 0:
-                {
-
-                    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound] forKey:kMergerSound];
-
-                    [listTableView reloadData];
-
-                    [SoundClass mergerSound];
-                    
-                }
-                    break;
-                case 1:
-                {
-
-                }
-                    break;
-                default:
-                    break;
-            }
-        }
-            break;
-        case 2:
         {
             [[NCSGameCenter sharedGameCenter] showLeaderboard];
         }
             break;
-        case 3:
+        case 2:
         {
             
             selectInt = indexPath.row;
@@ -283,7 +286,7 @@
 
         }
             break;
-        case 4:
+        case 3:
         {
             [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:kShowNumTile] forKey:kShowNumTile];
             

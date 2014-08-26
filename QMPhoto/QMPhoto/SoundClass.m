@@ -57,25 +57,25 @@
 //播放特效
 + (void)mergerSound {
     
-    //背景音乐
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound]) {
-        [[SoundClass state].mergerSound pause];
-
-    }else {
-        [[SoundClass state].mergerSound play];
-    }
+//    //背景音乐
+//    if ([[NSUserDefaults standardUserDefaults] boolForKey:kMergerSound]) {
+//        [[SoundClass state].mergerSound pause];
+//
+//    }else {
+//        [[SoundClass state].mergerSound play];
+//    }
     
 }
 
 + (void)backgroundSound {
     
-    //背景音乐
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:kBackGroundSound]) {
-        [[SoundClass state].backgroundSound pause];
-
-    }else {
-        [[SoundClass state].backgroundSound play];
-    }
+//    //背景音乐
+//    if ([[NSUserDefaults standardUserDefaults] boolForKey:kBackGroundSound]) {
+//        [[SoundClass state].backgroundSound pause];
+//
+//    }else {
+//        [[SoundClass state].backgroundSound play];
+//    }
     
 
     

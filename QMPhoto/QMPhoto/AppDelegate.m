@@ -21,8 +21,8 @@
 {
     // Override point for customization after application launch.
     
-    [MobClick startWithAppkey:kUMengKey reportPolicy:BATCH  channelId:@"dev"];
-    [MobClick setLogEnabled:YES];
+//    [MobClick startWithAppkey:kUMengKey reportPolicy:BATCH  channelId:@"dev"];
+//    [MobClick setLogEnabled:YES];
     
     
 

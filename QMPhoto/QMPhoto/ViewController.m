@@ -40,7 +40,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    currentLabel.font = [UIFont fontWithName:@"HiraKakuProN-W6" size:17];
+    highestLabel.font = [UIFont fontWithName:@"HiraKakuProN-W3" size:17];
     preView.layer.cornerRadius = 5;
     
     [SoundClass state];
@@ -245,7 +246,7 @@
 - (void)initializeBanner {
     
     //以画面直立的方式设定Banner于画面底部
-    bannerView = [[ADBannerView alloc]initWithFrame:CGRectMake(0.0, 430.0, self.view.frame.size.width, 50.0)];
+    bannerView = [[ADBannerView alloc]initWithFrame:CGRectMake(0.0, DEVICE_SCREEN_HEIGHT - 50, self.view.frame.size.width, 50.0)];
     
     //此Banner所能支援的类型
     bannerView.requiredContentSizeIdentifiers = [NSSet setWithObjects:ADBannerContentSizeIdentifierPortrait, ADBannerContentSizeIdentifierLandscape, nil];
