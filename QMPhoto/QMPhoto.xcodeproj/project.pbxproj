@@ -13,6 +13,7 @@
 		7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */; };
 		C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B107697AF0D4FE69053C454 /* libPods.a */; };
 		F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */; };
+		F062201319AF599800A99A23 /* iLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F062201219AF599800A99A23 /* iLink.m */; };
 		F0A43CA5195E9C3D00DC0C27 /* BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C93195E9C3D00DC0C27 /* BaseAnimation.m */; };
 		F0A43CA6195E9C3D00DC0C27 /* M2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C95195E9C3D00DC0C27 /* M2Cell.m */; };
 		F0A43CA7195E9C3D00DC0C27 /* M2GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43C97195E9C3D00DC0C27 /* M2GameManager.m */; };
@@ -110,6 +111,8 @@
 		8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F04170ED19532515000AFBC7 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
 		F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		F062201119AF599800A99A23 /* iLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iLink.h; sourceTree = "<group>"; };
+		F062201219AF599800A99A23 /* iLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iLink.m; sourceTree = "<group>"; };
 		F0A43C92195E9C3D00DC0C27 /* BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimation.h; sourceTree = "<group>"; };
 		F0A43C93195E9C3D00DC0C27 /* BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimation.m; sourceTree = "<group>"; };
 		F0A43C94195E9C3D00DC0C27 /* M2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Cell.h; sourceTree = "<group>"; };
@@ -253,6 +256,15 @@
 				F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */,
 			);
 			path = VPImageCropper;
+			sourceTree = "<group>";
+		};
+		F062201019AF599800A99A23 /* iLink */ = {
+			isa = PBXGroup;
+			children = (
+				F062201119AF599800A99A23 /* iLink.h */,
+				F062201219AF599800A99A23 /* iLink.m */,
+			);
+			path = iLink;
 			sourceTree = "<group>";
 		};
 		F0A43C91195E9C3D00DC0C27 /* GAME */ = {
@@ -412,6 +424,7 @@
 		F0E2F570194BFC9000C3CC92 /* QMPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				F062201019AF599800A99A23 /* iLink */,
 				7C03833F19A4DAD000FB1E20 /* UMAnalytics_Sdk_3.1.2 */,
 				F0A43CB2195EA96700DC0C27 /* ranking */,
 				F04170EC19532515000AFBC7 /* VPImageCropper */,
@@ -645,6 +658,7 @@
 			files = (
 				F0A43CB1195E9DEA00DC0C27 /* UILabel+QM_Category.m in Sources */,
 				F0E2F584194BFC9000C3CC92 /* ViewController.m in Sources */,
+				F062201319AF599800A99A23 /* iLink.m in Sources */,
 				F0ABF346194D255B00D7CF21 /* ListViewController.m in Sources */,
 				F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */,
 				F0ABF324194D1A5400D7CF21 /* M2Texture.m in Sources */,
@@ -804,7 +818,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: yongsheng liu (24D459F86D)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
 				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
@@ -815,7 +829,7 @@
 					"$(PROJECT_DIR)/QMPhoto/UMAnalytics_Sdk_3.1.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DA655EE8-D252-466D-82D4-DFAB071CBBF2";
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -827,7 +841,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: yongsheng liu (24D459F86D)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: yongsheng liu (K6D5KQ7QKW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMPhoto/QMPhoto-Prefix.pch";
 				INFOPLIST_FILE = "QMPhoto/QMPhoto-Info.plist";
@@ -838,7 +852,7 @@
 					"$(PROJECT_DIR)/QMPhoto/UMAnalytics_Sdk_3.1.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DA655EE8-D252-466D-82D4-DFAB071CBBF2";
+				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

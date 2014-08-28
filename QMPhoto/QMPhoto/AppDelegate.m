@@ -12,22 +12,36 @@
 
 #import "MobClick.h"
 
+#import "iLink.h"
+
 #define INTERSTITIAL_AD_UNIT_ID @"ca-app-pub-5240802043946893/6788370961"
 
 
 @implementation AppDelegate
 
++ (void)initialize
+{
+    //set the bundle ID. normally you wouldn't need to do this
+    //as it is picked up automatically from your Info.plist file
+    //but we want to test with an app that's actually on the store
+    [iLink sharedInstance].applicationBundleID = @"com.QiMeng.2Photo";
+	[iLink sharedInstance].onlyPromptIfLatestVersion = NO;
+    
+    [iLink sharedInstance].applicationVersion = @"1.1";
+    
+    //[iLink sharedInstance].globalPromptForUpdate = NO;
+    // enable preview mode //  if YES would show prompt always //
+    //[iLink sharedInstance].previewMode = YES;
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     
-//    [MobClick startWithAppkey:kUMengKey reportPolicy:BATCH  channelId:@"dev"];
+    [MobClick startWithAppkey:kUMengKey reportPolicy:BATCH  channelId:@"apple store"];
 //    [MobClick setLogEnabled:YES];
     
-    
-
-    
-
     [[NCSGameCenter sharedGameCenter] authenticateLocalUser];
     
     
