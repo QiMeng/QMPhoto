@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C03834319A4DAD000FB1E20 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C03834019A4DAD000FB1E20 /* libMobClickLibrary.a */; };
 		7C03834519A4DB6A00FB1E20 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C03834419A4DB6A00FB1E20 /* libz.dylib */; };
 		7C03834719A4DD8200FB1E20 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C03834619A4DD8200FB1E20 /* iAd.framework */; };
 		7C1A68AF195003A500E6B9E7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */; };
+		7C99BC3619BD18A600D250ED /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C99BC3319BD18A600D250ED /* libMobClickLibrary.a */; };
 		C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B107697AF0D4FE69053C454 /* libPods.a */; };
 		F04170EF19532515000AFBC7 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04170EE19532515000AFBC7 /* VPImageCropperViewController.m */; };
 		F062201319AF599800A99A23 /* iLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F062201219AF599800A99A23 /* iLink.m */; };
@@ -100,13 +100,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C03834019A4DAD000FB1E20 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		7C03834119A4DAD000FB1E20 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
-		7C03834219A4DAD000FB1E20 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		7C03834419A4DB6A00FB1E20 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		7C03834619A4DD8200FB1E20 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		7C1A68AD195003A500E6B9E7 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		7C1A68AE195003A500E6B9E7 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		7C99BC3319BD18A600D250ED /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		7C99BC3419BD18A600D250ED /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		7C99BC3519BD18A600D250ED /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		8B107697AF0D4FE69053C454 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9D26CF02734AAC976FE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F04170ED19532515000AFBC7 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				F0E2F56D194BFC9000C3CC92 /* CoreGraphics.framework in Frameworks */,
 				F0E2F56F194BFC9000C3CC92 /* UIKit.framework in Frameworks */,
 				F0E2F56B194BFC8F00C3CC92 /* Foundation.framework in Frameworks */,
-				7C03834319A4DAD000FB1E20 /* libMobClickLibrary.a in Frameworks */,
+				7C99BC3619BD18A600D250ED /* libMobClickLibrary.a in Frameworks */,
 				C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,14 +239,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C03833F19A4DAD000FB1E20 /* UMAnalytics_Sdk_3.1.2 */ = {
+		7C99BC3219BD18A600D250ED /* UMAnalytics_Sdk_3.1.3 */ = {
 			isa = PBXGroup;
 			children = (
-				7C03834019A4DAD000FB1E20 /* libMobClickLibrary.a */,
-				7C03834119A4DAD000FB1E20 /* MobClick.h */,
-				7C03834219A4DAD000FB1E20 /* MobClickSocialAnalytics.h */,
+				7C99BC3319BD18A600D250ED /* libMobClickLibrary.a */,
+				7C99BC3419BD18A600D250ED /* MobClick.h */,
+				7C99BC3519BD18A600D250ED /* MobClickSocialAnalytics.h */,
 			);
-			path = UMAnalytics_Sdk_3.1.2;
+			path = UMAnalytics_Sdk_3.1.3;
 			sourceTree = "<group>";
 		};
 		F04170EC19532515000AFBC7 /* VPImageCropper */ = {
@@ -424,8 +424,8 @@
 		F0E2F570194BFC9000C3CC92 /* QMPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				7C99BC3219BD18A600D250ED /* UMAnalytics_Sdk_3.1.3 */,
 				F062201019AF599800A99A23 /* iLink */,
-				7C03833F19A4DAD000FB1E20 /* UMAnalytics_Sdk_3.1.2 */,
 				F0A43CB2195EA96700DC0C27 /* ranking */,
 				F04170EC19532515000AFBC7 /* VPImageCropper */,
 				F0E2F579194BFC9000C3CC92 /* AppDelegate.h */,
@@ -827,6 +827,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/QMPhoto/GoogleMobileAdsSdkiOS-6.9.2",
 					"$(PROJECT_DIR)/QMPhoto/UMAnalytics_Sdk_3.1.2",
+					"$(PROJECT_DIR)/QMPhoto/UMAnalytics_Sdk_3.1.3",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";
@@ -850,6 +851,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/QMPhoto/GoogleMobileAdsSdkiOS-6.9.2",
 					"$(PROJECT_DIR)/QMPhoto/UMAnalytics_Sdk_3.1.2",
+					"$(PROJECT_DIR)/QMPhoto/UMAnalytics_Sdk_3.1.3",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8F7ED6FC-F4D7-43E7-B41E-0131FB8C5A3A";

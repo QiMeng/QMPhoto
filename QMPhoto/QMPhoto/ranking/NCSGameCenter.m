@@ -60,6 +60,7 @@ static UIViewController* currentModalViewController = nil;
     if (!gameCenterAvailable) return;
     if ([GKLocalPlayer localPlayer].authenticated == NO) {
         [[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:nil];
+        
     } else {
         NSLog(@"Already authenticated!");
     }
