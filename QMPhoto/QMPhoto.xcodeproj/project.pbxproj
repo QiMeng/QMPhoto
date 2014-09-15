@@ -27,6 +27,7 @@
 		F0A43CB9195EC30700DC0C27 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0A43CB8195EC30600DC0C27 /* sound.mp3 */; };
 		F0A43CBC195F065300DC0C27 /* EndGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A43CBB195F065300DC0C27 /* EndGameViewController.m */; };
 		F0A94745194F187E002CB0B4 /* SoundClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A94744194F187E002CB0B4 /* SoundClass.m */; };
+		F0AB6CB819C08402009CF604 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AB6CB519C08402009CF604 /* libMobClickLibrary.a */; };
 		F0ABF31E194D147500D7CF21 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31C194D147500D7CF21 /* list.png */; };
 		F0ABF31F194D147500D7CF21 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ABF31D194D147500D7CF21 /* list@2x.png */; };
 		F0ABF324194D1A5400D7CF21 /* M2Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ABF321194D1A5400D7CF21 /* M2Texture.m */; };
@@ -139,6 +140,9 @@
 		F0A43CBB195F065300DC0C27 /* EndGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndGameViewController.m; sourceTree = "<group>"; };
 		F0A94743194F187E002CB0B4 /* SoundClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundClass.h; sourceTree = "<group>"; };
 		F0A94744194F187E002CB0B4 /* SoundClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundClass.m; sourceTree = "<group>"; };
+		F0AB6CB519C08402009CF604 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		F0AB6CB619C08402009CF604 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		F0AB6CB719C08402009CF604 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		F0ABF31C194D147500D7CF21 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		F0ABF31D194D147500D7CF21 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
 		F0ABF320194D1A5400D7CF21 /* M2Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Texture.h; sourceTree = "<group>"; };
@@ -221,7 +225,11 @@
 				F0E2F56D194BFC9000C3CC92 /* CoreGraphics.framework in Frameworks */,
 				F0E2F56F194BFC9000C3CC92 /* UIKit.framework in Frameworks */,
 				F0E2F56B194BFC8F00C3CC92 /* Foundation.framework in Frameworks */,
+<<<<<<< HEAD
 				7C99BC3619BD18A600D250ED /* libMobClickLibrary.a in Frameworks */,
+=======
+				F0AB6CB819C08402009CF604 /* libMobClickLibrary.a in Frameworks */,
+>>>>>>> FETCH_HEAD
 				C2C297C8F75448CCA30226F9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +247,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		7C99BC3219BD18A600D250ED /* UMAnalytics_Sdk_3.1.3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +258,8 @@
 			path = UMAnalytics_Sdk_3.1.3;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> FETCH_HEAD
 		F04170EC19532515000AFBC7 /* VPImageCropper */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +318,16 @@
 				F0A43CB4195EA96700DC0C27 /* NCSGameCenter.m */,
 			);
 			path = ranking;
+			sourceTree = "<group>";
+		};
+		F0AB6CB419C08402009CF604 /* UMAnalytics_Sdk_3.1.3 */ = {
+			isa = PBXGroup;
+			children = (
+				F0AB6CB519C08402009CF604 /* libMobClickLibrary.a */,
+				F0AB6CB619C08402009CF604 /* MobClick.h */,
+				F0AB6CB719C08402009CF604 /* MobClickSocialAnalytics.h */,
+			);
+			path = UMAnalytics_Sdk_3.1.3;
 			sourceTree = "<group>";
 		};
 		F0ABF31B194D147500D7CF21 /* common */ = {
@@ -424,7 +445,11 @@
 		F0E2F570194BFC9000C3CC92 /* QMPhoto */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				7C99BC3219BD18A600D250ED /* UMAnalytics_Sdk_3.1.3 */,
+=======
+				F0AB6CB419C08402009CF604 /* UMAnalytics_Sdk_3.1.3 */,
+>>>>>>> FETCH_HEAD
 				F062201019AF599800A99A23 /* iLink */,
 				F0A43CB2195EA96700DC0C27 /* ranking */,
 				F04170EC19532515000AFBC7 /* VPImageCropper */,
